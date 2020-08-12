@@ -1,7 +1,7 @@
 /* ---------------------- 1. Base ---------------------- */
 /* --------------------- 1 Base --------------------- */
 /** Set up a decent box model on the root element */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700,900");
 html { box-sizing: border-box; }
 
 body { margin: 0; padding: 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: #111111; }
@@ -2332,9 +2332,40 @@ h1, h2, h3, h4, h5, h6 { color: #444444; font-family: "Roboto", sans-serif; font
 
 /* --------------------- 2. Layout --------------------- */
 /* --------------------- 1 Header --------------------- */
-.navbar-brand { background-color: #999999; }
+/*preloader*/
+#preloader { height: 100vh; width: 100%; background-color: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 999; }
 
-.navbar-brand img { max-width: 100px; width: 100%; color: #e50050; }
+#preloader img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; }
+
+/*navbar-brand*/
+.navbar-brand { width: 200px; height: 55px; }
+
+/*navbar*/
+.navbar-nav li a { font-size: 16px; font-weight: 500; line-height: 1; color: #fff !important; position: relative; padding: 25px 0; text-transform: capitalize; }
+
+.navbar-nav li a::before { content: ''; position: absolute; top: 72%; bottom: 50%; width: 0%; height: 4%; background: #fff; transition: all 0.3s linear; }
+
+.navbar-nav li a:hover::before { width: 80%; }
+
+.navbar-nav li .active::before { width: 80% !important; }
+
+.navbar-nav li .dropdown { position: absolute; top: 105%; visibility: hidden; }
+
+.navbar-nav li .dropdown li { list-style-type: none; background-color: #6B6FFF; position: relative; text-align: left; visibility: hidden; transition: 0.75s ease; }
+
+.navbar-nav li .dropdown li a { text-decoration: none; }
+
+.navbar-nav li .dropdown li:hover a { color: #CCC5D0 !important; transition: 0.75s ease; }
+
+.navbar-nav li .dropdown li:hover a:hover:before { width: 0%; }
+
+.navbar-nav li .drpdwn-two li { padding-top: 8px; padding-left: 18px; padding-bottom: 8px; position: relative; width: 200px; left: -152px; transition: 0.75s ease; visibility: hidden; }
+
+.navbar-nav:hover .dropdown li { visibility: visible; transition: 0.75s ease; }
+
+.bar-icon { border: 1px solid #fff; padding: 8px 9px; color: #fff; }
+
+.down_img { margin-left: 6px; }
 
 /* --------------------- 2 Footer --------------------- */
 /* ------------------- 3. components ------------------- */
