@@ -3,27 +3,17 @@
 // -----------------------------------------------------------------------------
 
 
-/// Regular font family
-/// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 $body-font: 'Open Sans', 'Helvetica Neue Light';
 
 // Base colors
 $body-color: #333;
 $p-color: #333; // <p> tag color
-$h-color: #111; // headings color
 $a-color: #337ab7; // links color
 
 //$color-scheme: @@@@
 
 // Font sizes
 $base-font-size: 14px;
-
-$font-roboto: 'Roboto', sans-serif;
-
 
 /// Copy text color
 /// @type Color
@@ -44,8 +34,6 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// Dark grey
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

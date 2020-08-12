@@ -1,8 +1,7 @@
-
 // .navbar-brand {
 //   background-color: $mid-grey;
 //   img {
-    
+
 //     max-width: 100px;
 //     width: 100%;
 //     color: $brand-color;
@@ -15,7 +14,7 @@
 
 /*preloader*/
 
-#preloader{
+#preloader {
   height: 100vh;
   width: 100%;
   background-color: #fff;
@@ -25,7 +24,8 @@
   transform: translate(-50%, -50%);
   z-index: 999;
 }
-#preloader img{
+
+#preloader img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,92 +34,104 @@
 }
 
 /*navbar-brand*/
-.navbar-brand{
+.navbar-brand {
   width: 200px;
-  height: 55px; 
+  height: 55px;
 }
 
-/*navbar*/ 
-.navbar-nav{
-  li{
-    a{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1;
-    color: #fff!important;
-    position: relative;
-    padding: 25px 0;
-    text-transform: capitalize;
+/*navbar*/
+.navbar-nav {
+  li {
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      color: #fff !important;
+      position: relative;
+      padding: 25px 0;
+      text-transform: capitalize;
     }
-    a::before{
-    content: '';
-    position: absolute;
-    top: 72%;
-    bottom: 50%;
-    width: 0%;
-    height: 4%;
-    background: #fff;
-    transition: all 0.3s linear;
+
+    a:before {
+      content: '';
+      position: absolute;
+      top: 72%;
+      bottom: 50%;
+      width: 0%;
+      height: 4%;
+      background: #fff;
+      transition: all 0.3s linear;
     }
-    a:hover::before{
+
+    a:hover:before {
       width: 80%;
     }
-    .active::before{
-      width: 80%!important;
+
+    .active:before {
+      width: 80% !important;
     }
-    .dropdown{
+
+    .dropdown {
       position: absolute;
-     top: 105%;
-     visibility: hidden;
+      top: 105%;
+      visibility: hidden;
 
     }
-    .dropdown li{
+
+    .dropdown li {
       list-style-type: none;
       background-color: #6B6FFF;
       position: relative;
       text-align: left;
       visibility: hidden;
-      transition:0.75s ease;
+      transition: 0.75s ease;
 
     }
-    .dropdown li a{
+
+    .dropdown li a {
       text-decoration: none;
     }
-    .dropdown li:hover a{
-      color: #CCC5D0!important;
-      transition:0.75s ease;
+
+    .dropdown li:hover a {
+      color: #CCC5D0 !important;
+      transition: 0.75s ease;
 
     }
-    .dropdown li:hover a:hover:before{
-      width: 0%;
+
+    .dropdown li:hover a:hover:before {
+      width: 0;
     }
-    .drpdwn-two li{
+
+    .drpdwn-two li {
       padding-top: 8px;
       padding-left: 18px;
       padding-bottom: 8px;
       position: relative;
       width: 200px;
       left: -152px;
-      transition:0.75s ease;
+      transition: 0.75s ease;
       visibility: hidden;
 
     }
 
 
   }
-  &:hover .dropdown li{
+
+  &:hover .dropdown li {
     visibility: visible;
-    transition:0.75s ease;
+    transition: 0.75s ease;
 
   }
-  
- 
+
+
 }
-.bar-icon{
+
+.bar-icon {
   border: 1px solid #fff;
   padding: 8px 9px;
   color: #fff;
 }
-.down_img{
+
+.down_img {
   margin-left: 6px;
 }
