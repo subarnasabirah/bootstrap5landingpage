@@ -1,0 +1,14 @@
+
+.navbar-brand {
+  background-color: $mid-grey;
+  img {
+    
+    max-width: 100px;
+    width: 100%;
+    color: $brand-color;
+  }
+  &.active{
+
+  }
+}
+
