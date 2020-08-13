@@ -1,0 +1,28 @@
+%btnCss{
+    background-color: $bg-color;
+    text-decoration: none;
+    color: $white-color;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+%btnTwoCss{
+    @include transition(0.5s);
+    background-color:  $bg-color;
+    text-decoration: none;
+    color: $white-color;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    -webkit-box-shadow: 0 5px 16px #bababa;
+    box-shadow: 0 5px 16px #bababa;
+    border: 1px solid transparent;
+
+}

@@ -3,42 +3,49 @@
 // -----------------------------------------------------------------------------
 
 
-$body-font: 'Open Sans', 'Helvetica Neue Light';
+// $body-font: 'Open Sans', 'Helvetica Neue Light';
 
-// Base colors
-$body-color: #333;
-$p-color: #333; // <p> tag color
-$a-color: #337ab7; // links color
+// // Base colors
+// $body-color: #333;
+// $p-color: #333; // <p> tag color
+// $a-color: #337ab7; // links color
 
-//$color-scheme: @@@@
+// //$color-scheme: @@@@
 
-// Font sizes
-$base-font-size: 14px;
+// // Font sizes
+// $base-font-size: 14px;
 
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
+// /// Copy text color
+// /// @type Color
+// $text-color: rgb(34, 34, 34) !default;
 
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+// /// Main brand color
+// /// @type Color
+// $brand-color: rgb(229, 0, 80) !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+// /// Light grey
+// /// @type Color
+// $light-grey: rgb(237, 237, 237) !default;
 
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+// /// Medium grey
+// /// @type Color
+// $mid-grey: rgb(153, 153, 153) !default;
 
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+// /// Dark grey
+// /// @type Color
+// $dark-grey: rgb(68, 68, 68) !default;
 
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$assets-dir: 'assets/' !default;
-$images-dir: 'assets/images/' !default;
-$plugins-dir: 'assets/images/' !default;
+// /// Relative or absolute URL where all assets are served from
+// /// @type String
+// /// @example scss - When using a CDN
+// ///   $base-url: 'http://cdn.example.com/assets/';
+// $assets-dir: 'assets/' !default;
+// $images-dir: 'assets/images/' !default;
+// $plugins-dir: 'assets/images/' !default;
+
+
+$white-color: #fff;
+$bg-color: #6B6FFF;
+$title-color: #414142;
+$boxshadow-color: #dadbff; 
+$beforebg-color: #EEEEFE;
