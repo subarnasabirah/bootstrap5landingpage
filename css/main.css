@@ -62,9 +62,15 @@ h1, h2, h3, h4, h5, h6 { color: #444444; font-style: normal; font-weight: 700; }
 
 .navbar-nav:hover .dropdown li { visibility: visible; transition: 0.75s ease; }
 
+.bg-light { background: transparent !important; transition: 0.75s ease; }
+
 .bar-icon { border: 1px solid #fff; padding: 8px 9px; color: #fff; }
 
 .down_img { margin-left: 6px; }
+
+header { width: 100%; position: fixed; z-index: 11; background: #6B6FFF; }
+
+header.scrolled { background: #6B6FFF !important; transition: 0.75s ease; }
 
 /* --------------------- 2 Footer --------------------- */
 /* ------------------- 3. components ------------------- */
