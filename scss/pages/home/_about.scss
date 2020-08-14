@@ -9,6 +9,17 @@
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
+
+    img{
+        width: 100%;
+        @include transition(.5s);
+    }
+    img:hover{
+        width: 100%;
+        @include transform (scale(1.02));
+            
+
+    }
     &::before{
         content: '';
         position: absolute;
@@ -31,16 +42,7 @@
         background-color: $beforebg-color;
         @include transition(.5s);
     }
-    img{
-        width: 100%;
-        @include transition(.5s);
-    }
-    img:hover{
-        width: 100%;
-        @include transform (scale(1.02));
-            
-
-    }
+    
 }
 
 .about-content {

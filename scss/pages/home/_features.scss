@@ -1,0 +1,103 @@
+.our-features {
+    padding: 90px 80px;
+    background-color: #F9F9FF
+}
+.features-heading {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    h2{
+        font-weight: 900;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blu-color;
+    }
+    h4{
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        color: $title-color;
+        font-size: 18px;
+        margin-bottom: 80px
+
+    }
+    h4::before{
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 3px;
+            background-color: $blu-color;
+            left: 50%;
+            @include transition(.5s);
+            bottom: -10px;
+            @include transform (translateX(-50%));
+    }
+    
+
+}
+
+.single-features{
+    -webkit-box-shadow: -6px 10px 40px rgba(234, 229, 244, 0.7);
+    box-shadow: -6px 10px 40px rgba(234, 229, 244, 0.7);
+    text-align: center;
+    padding: 50px 20px;
+    @include transition(.5s);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 3px;
+        height: 0;
+        bottom: 0;
+        background: $blu-color;
+        @include transition(.7s);
+
+    }
+    &:hover::before{
+        top: 0;
+        height: 100%;
+
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -100%;
+        width: 3px;
+        height: 0;
+        background: $blu-color;
+        @include transition(.7s);
+
+    }
+    &:hover::after{
+        bottom: 0;
+        height: 100%;
+
+    }
+
+    img{
+        margin-bottom: 30px;
+
+    }
+    h4{
+        color: $title-color;
+        font-size: 19px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 15px;
+
+    }
+    p{
+        font-size: 15.5px;
+        line-height: 27px
+    }
+
+}
