@@ -17,10 +17,17 @@
   }
 
   .footer-top {
-    padding: 130px 0 90px 0;
+    padding: 100px 0 90px 0;
     position: relative;
     z-index: 99;
 
+    @include media('tab') {
+      padding: 160px 0 90px 0;
+    }
+
+    //@include media-width(1350) {
+    //  padding: 160px 0 90px 0;
+    //}
     li {
       list-style-type: none;
 
@@ -32,6 +39,8 @@
   }
 
   .single-widget {
+    padding-top: 30px;
+
     h2 {
       font-size: 20px;
       font-weight: 700;
@@ -54,7 +63,7 @@
       font-size: 15.5px;
       line-height: 26px;
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     ul {
@@ -62,6 +71,7 @@
         li {
           display: inline-block;
           margin-right: 10px;
+          padding-top: 10px;
 
           a {
             display: inline-block;
@@ -186,6 +196,7 @@
     text-decoration: none;
   }
 }
+
 .footer-icon {
   text-align: right;
   position: absolute;
