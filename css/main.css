@@ -333,7 +333,7 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .footer-top li a { text-decoration: none; }
 
-.footer-icon { text-align: right; position: absolute; right: 0; bottom: -200px; }
+.footer-icon { text-align: right; position: absolute; right: 0; }
 
 .single-widget h2 { font-size: 20px; font-weight: 700; text-transform: capitalize; }
 
