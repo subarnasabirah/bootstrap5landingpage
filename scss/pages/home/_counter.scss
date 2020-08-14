@@ -1,0 +1,24 @@
+.counter-up-area {
+    background-image: url('../img/counterup-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    padding: 90px 0;
+}
+
+.single-count-area{
+    color: $white-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    span{
+        font-size: 36px
+    }
+    p{
+        font-size: 22px;
+        margin-top: 10px;
+        color: $white-color;
+    }
+
+
+}

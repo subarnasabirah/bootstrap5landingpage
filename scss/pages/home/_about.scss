@@ -1,0 +1,76 @@
+.about-us-area{
+    padding: 90px 80px;
+}
+
+.about-img{
+    -webkit-box-shadow: 0 0 15px $boxshadow-color;
+    box-shadow: 0 0 15px $boxshadow-color;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    img{
+        width: 100%;
+        @include transition(.5s);
+    }
+    img:hover{
+        width: 100%;
+        @include transform (scale(1.02));
+            
+
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        left: -31px;
+        top: -30px;
+        width: 90%;
+        height: 92%;
+        z-index: -1;
+        background-color: $beforebg-color;
+        @include transition(.5s);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left: -31px;
+        top: -30px;
+        width: 90%;
+        height: 92%;
+        z-index: -1;
+        background-color: $beforebg-color;
+        @include transition(.5s);
+    }
+    
+}
+
+.about-content {
+    text-align: right;
+    padding-top: 60px;
+}
+
+.section-title{
+    h4{
+        @extend %sectionTitleOne;
+        font-weight: 500;
+    }
+    h2{ 
+       @extend %sectionTitleTwo;
+
+    }
+}
+p{
+    @extend %paraCss;
+}
+.section-button{
+    margin-top: 40px;
+    a{
+        @extend %btnTwoCss;
+    }
+    a:hover{
+        background-color:  $white-color;
+        color: $bg-color;
+        border: 1px solid $bg-color;
+    }
+}
