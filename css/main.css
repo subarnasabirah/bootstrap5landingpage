@@ -177,4 +177,12 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .single-features p { font-size: 15.5px; line-height: 27px; }
 
+.counter-up-area { background-image: url("../img/counterup-bg.jpg"); background-attachment: fixed; background-position: center; padding: 90px 0; }
+
+.single-count-area { color: #fff; font-weight: 700; text-transform: uppercase; text-align: center; }
+
+.single-count-area span { font-size: 36px; }
+
+.single-count-area p { font-size: 22px; margin-top: 10px; color: #fff; }
+
 /*# sourceMappingURL=main.css.map */
