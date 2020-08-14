@@ -38,7 +38,7 @@ $('.dot-list').owlCarousel({
     }
 });
 
-$(window).scroll(function () {
+$(window).on("load scroll",function(){
     startCounting();
 });
 
