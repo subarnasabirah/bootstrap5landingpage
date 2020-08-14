@@ -11,7 +11,7 @@
     box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
     text-align: center;
     padding: 50px 0 0 0;
-    @include transition (0.5s);
+    @include transition (.5s);
     background-color: $white-color;
     margin-bottom: 25px;
     &:hover{

@@ -18,7 +18,7 @@
         height: 92%;
         z-index: -1;
         background-color: $beforebg-color;
-        @include transition(0.5s);
+        @include transition(.5s);
     }
     &::after{
         content: '';
@@ -29,11 +29,11 @@
         height: 92%;
         z-index: -1;
         background-color: $beforebg-color;
-        @include transition(0.5s);
+        @include transition(.5s);
     }
     img{
         width: 100%;
-        @include transition(0.5s);
+        @include transition(.5s);
     }
     img:hover{
         width: 100%;

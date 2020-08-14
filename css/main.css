@@ -113,4 +113,42 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .single-services h4 { padding-bottom: 50px; color: #555454; font-weight: 700; }
 
+.projects-area { padding: 90px 80px; }
+
+.projects-content { text-align: left; }
+
+.project-heading h3 { position: relative; display: inline-block; font-weight: 700; text-transform: uppercase; color: #414142; font-size: 24px; line-height: 1.2; }
+
+.project-heading h3::before { position: absolute; content: ""; width: 65%; height: 4px; background-color: #353899; left: 0; bottom: -10px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+.projects-img img { max-width: 100%; height: auto; vertical-align: middle; border-style: none; }
+
+.pa-margintop { padding-top: 40px; margin-bottom: 30px; }
+
+.single-project { position: relative; overflow: hidden; }
+
+.single-project img { max-width: 100%; height: auto; vertical-align: middle; border-style: none; -webkit-transition: 1s; -o-transition: 1s; transition: 1s; }
+
+.single-project:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.single-project:hover .portfolio-text { background-color: rgba(107, 111, 255, 0.5); }
+
+.single-project:hover .portfolio-text a { margin-left: 0; }
+
+.single-project:hover .portfolio-text h5 { margin-left: 0; }
+
+.portfolio-text { position: absolute; left: 0; top: 0; background-color: rgba(107, 111, 255, 0.2); height: 100%; width: 100%; text-align: center; padding-top: 44%; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+.portfolio-text h5 { color: #fff; margin: 0; font-size: 25px; margin-left: -780px; text-transform: capitalize; font-weight: 700; -webkit-transition: 0.7s; -o-transition: 0.7s; transition: 0.7s; }
+
+.portfolio-text a { background-color: #fff; text-decoration: none; color: #6B6FFF; text-transform: capitalize; display: inline-block; padding: 10px 30px; font-size: 15px; font-weight: 700; text-align: center; margin-top: 20px; margin-left: -785px; -webkit-transition: 0.7s; -o-transition: 0.7s; transition: 0.7s; }
+
+.portfolio-text a:hover { background-color: #6B6FFF; color: #fff; }
+
+.owl-carousel .owl-dot { background-color: rgba(107, 111, 255, 0.5) !important; display: inline-block; height: 15px; margin: 0 3px; width: 15px; border-radius: 100%; }
+
+.owl-carousel .owl-dot.active { background-color: #6B6FFF !important; height: 15px; width: 15px; border-radius: 100%; }
+
+.owl-carousel .owl-dot .owl-dots { text-align: center !important; margin-top: 30px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@
 }
 
 %btnTwoCss{
-    @include transition(0.5s);
+    @include transition(.5s);
     background-color:  $bg-color;
     text-decoration: none;
     color: $white-color;
