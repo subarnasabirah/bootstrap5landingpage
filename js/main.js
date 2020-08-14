@@ -1,3 +1,7 @@
+// Global variable
+let countingFinish = false;
+const loader = document.getElementById('preloader');
+
 $(window).scroll(function () {
     $('header').toggleClass('scrolled', $(this).scrollTop() > 100);
 });
@@ -5,9 +9,6 @@ $(window).scroll(function () {
 $(window).scroll(function () {
     $('.navbar-nav li').toggleClass('scrolled', $(this).scrollTop() > 100);
 });
-
-
-const loader = document.getElementById('preloader');
 
 function preLoader() {
     loader.style.display = 'none';
@@ -37,11 +38,31 @@ $('.dot-list').owlCarousel({
     }
 });
 
-// jQuery(document).ready(function ($) {
-//     $('.counter').counterUp({
-//         delay: 10,
-//         time: 1000
-//     });
-//
-// });
+$(window).scroll(function () {
+    startCounting();
+});
 
+function startCounting() {
+    if (isElementVisible($('.counter')) && !countingFinish) {
+        countingFinish = true;
+        $('.counter').each(function (e) {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }
+}
+
+function isElementVisible($elementToBeChecked) {
+    const TopView = $(window).scrollTop();
+    const BotView = TopView + $(window).height();
+    const TopElement = $elementToBeChecked.offset().top;
+    const BotElement = TopElement + $elementToBeChecked.height();
+    return ((BotElement <= BotView) && (TopElement >= TopView));
+}
