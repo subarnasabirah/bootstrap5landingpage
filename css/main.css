@@ -251,4 +251,50 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .testimonial h6 { font-size: 16px; margin-top: -5px; }
 
+.latest-blog-area { padding: 90px 80px; background-image: url("../img/blog/blog-bg.jpg"); }
+
+.blog-heading { text-align-last: center; display: inline-block; margin: auto; }
+
+.blog-heading h2 { font-weight: 900; font-size: 33px; letter-spacing: 1px; text-transform: uppercase; color: #fff; }
+
+.blog-heading h4 { position: relative; display: inline-block; text-transform: uppercase; color: #fff; font-size: 18px; margin-bottom: 80px; }
+
+.blog-heading h4::before { position: absolute; content: ""; width: 80px; height: 3px; background-color: #fff; left: 50%; bottom: -10px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+.single-blog { background-color: #fff; overflow: hidden; }
+
+.single-blog .blog-image { position: relative; overflow: hidden; }
+
+.single-blog .blog-image img { -webkit-transition: 0.7s; -o-transition: 0.7s; transition: 0.7s; width: 100%; }
+
+.single-blog .blog-image img:hover { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.intro-text-blog { position: absolute; left: 0%; top: 25%; margin: auto; right: 0; text-align: center; }
+
+.blog-tag { position: absolute; top: 15px; right: 0; }
+
+.blog-tag span { background-color: #6B6FFF; padding: 7px 18px; color: #fff; text-transform: capitalize; font-size: 15px; display: block; text-align: center; }
+
+.blog-content { padding: 20px 20px 25px 20px; }
+
+.blog-content p { font-size: 15.5px; line-height: 26px; margin-bottom: 0; }
+
+.blog-content a { text-decoration: none; }
+
+.blog-content-heading { display: inline-block; width: 70%; }
+
+.blog-content-heading h4 a { font-size: 18px; color: #414142; text-transform: uppercase; font-weight: 700; text-decoration: none; }
+
+.blog-content-heading a { text-decoration: none; }
+
+.blog-date { display: inline-block; width: 28%; }
+
+.blog-date span { font-size: 14px; color: #686868; text-transform: capitalize; display: block; }
+
+.blog-readmore-btn { text-transform: capitalize; display: inline-block; font-size: 15px; font-weight: 700; color: #6B6FFF; position: relative; margin-top: 10px; }
+
+.blog-readmore-btn::before { position: absolute; content: ""; width: 0; height: 2px; background-color: #6B6FFF; left: 0; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; bottom: -5px; opacity: 0; visibility: hidden; }
+
+.blog-readmore-btn:hover::before { width: 50px; opacity: 1; visibility: visible; }
+
 /*# sourceMappingURL=main.css.map */
