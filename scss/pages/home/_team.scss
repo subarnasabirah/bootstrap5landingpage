@@ -1,0 +1,165 @@
+.our-team-area{
+    padding: 90px 80px;
+    background-color: $contnt-bg-color;
+}
+
+.team-heading{
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    h2{
+        font-weight: 900;
+        font-size: 33px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blu-color;
+    }
+    h4{
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        color: $title-color;
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+    h4::before{
+        position: absolute;
+        content: " ";
+        width: 80px;
+        height: 3px;
+        background-color: $blu-color;
+        left: 49%;
+        @include transition(.5s);
+        bottom: -10px; 
+        @include transform (translateX(-50%));
+        @include transition(all 0.8s ease 0s);
+
+    }
+
+}
+.our-team{
+    overflow: hidden;
+    position: relative;
+    border: 2px solid $beforebg-color;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(107, 111, 255, 0.7);
+        position: absolute;
+        top: -100%;
+        left: 0;
+        opacity: 0;
+        @include transition(all 0.8s ease 0s);
+    }
+    &:hover::after{
+        top: 0;
+        opacity: 1;
+
+    }
+    .social{
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        position: absolute;
+        top: -50%;
+        left: 0;
+        z-index: 1;
+        @include transition(all 0.8s ease 0s);
+        li{
+            display: inline-block;
+            a{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                background: $white-color;
+                font-size: 20px;
+                color: $bg-color;
+                margin: 0 2px;
+                text-decoration: none;
+            }
+            
+            }
+        }
+    
+    &:hover .social{
+        top: 38%;
+    }
+    .update-social-icon{
+        li{
+            a{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                background: $white-color;
+                font-size: 20px;
+                color: $bg-color;
+                margin: 0 2px;
+                border-radius: 25px;
+            }
+        }
+    }
+
+    .team-content{
+        width: 100%;
+        padding: 20px 25px;
+        background: $white-color;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        @include transition(all 0.8s ease 0s);
+        &::before{
+            content: "";
+            width: 100%;
+            border-right: 420px solid $white-color;
+            border-top: 60px solid transparent;
+            position: absolute;
+            top: -59px;
+            left: 0;
+            @include transition(all 0.8s ease 0s);
+
+        }
+    }
+    &:hover .team-content{
+        background: $bg-color;
+
+    }
+    &:hover .team-content::before{
+        border-right-color: $bg-color;
+    }
+    .title{
+        font-size: 20px;
+        color: $bg-color;
+        margin: 0;
+        text-align: right;
+        font-weight: 700;
+        margin-top: -15px;
+
+    }
+    &:hover .title{
+        color: $white-color!important
+
+    }
+    .post {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        color: #686ab3;
+        margin-top: 3px;
+        text-align: right;
+        font-weight: 700
+    }
+    &:hover .post{
+        color: #e2e2e2 !important
+
+    }
+
+
+}
+
+
+
