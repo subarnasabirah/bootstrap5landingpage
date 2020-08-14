@@ -1,0 +1,35 @@
+.services-area {
+    padding: 90px 80px;
+    background-color: #f9f9ff;
+}
+.services-content{
+    text-align: left;
+}
+
+.single-services{
+    -webkit-box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
+    box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
+    text-align: center;
+    padding: 50px 0 0 0;
+    @include transition (0.5s);
+    background-color: $white-color;
+    margin-bottom: 25px;
+    &:hover{
+        background-color: $beforebg-color;
+        @include transform (translateY(-10px));
+        -webkit-box-shadow: 0px 15px 15px 0px $light-color;
+        box-shadow: 0px 15px 15px 0px $light-color;
+   
+    }
+}
+
+.single-services img {
+    margin-bottom: 30px;
+}
+
+.single-services h4 {
+    @extend %sectionTitleOne;
+    padding-bottom: 50px;
+    color: #555454;
+    font-weight: 700;
+}

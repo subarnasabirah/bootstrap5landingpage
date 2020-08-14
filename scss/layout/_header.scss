@@ -21,7 +21,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include transform (translate(-50%, -50%));
   z-index: 999;
 }
 
@@ -29,7 +29,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include transform (translate(-50%, -50%));
   width: 100px;
 }
 
@@ -60,7 +60,7 @@
       width: 0%;
       height: 4%;
       background: $white-color;
-      transition: all 0.3s linear;
+      @include transition (all 0.3s linear);
     }
 
     a:hover::before {
@@ -84,7 +84,7 @@
       position: relative;
       text-align: left;
       visibility: hidden;
-      transition: 0.75s ease;
+      @include transition (0.75s ease);
 
     }
 
@@ -94,7 +94,7 @@
 
     .dropdown li:hover a {
       color: #CCC5D0 !important;
-      transition: 0.75s ease;
+      @include transition (0.75s ease);
 
     }
 
@@ -109,13 +109,13 @@
       position: relative;
       width: 200px;
       left: -152px;
-      transition: 0.75s ease;
+      @include transition (0.75s ease);
       visibility: hidden;
 
     }
     &:hover .dropdown li {
       visibility: visible;
-      transition: 0.75s ease;
+      @include transition (0.75s ease);
   
     }
   
@@ -128,13 +128,13 @@
 }
 .bg-light{
   background: transparent!important;
-  transition:0.75s ease;
+  @include transition (0.75s ease);
   
 }
 .bar-icon {
   border: 1px solid $white-color;
   padding: 8px 9px;
-  color:$white-color;
+  color: $white-color;
 }
 
 .down_img {
@@ -148,7 +148,7 @@ header{
 }
 header.scrolled{
   background: $bg-color!important;
-  transition: 0.75s ease;
+  @include transition (0.75s ease);
 
 }
 

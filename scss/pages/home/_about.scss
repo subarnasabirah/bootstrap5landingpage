@@ -10,37 +10,35 @@
     margin-left: 30px;
     margin-bottom: 30px;
     &::before{
+        content: '';
         position: absolute;
         left: -31px;
         top: -30px;
         width: 90%;
         height: 92%;
         z-index: -1;
-        content: '';
         background-color: $beforebg-color;
         @include transition(0.5s);
     }
     &::after{
+        content: '';
         position: absolute;
         left: -31px;
         top: -30px;
         width: 90%;
         height: 92%;
         z-index: -1;
-        content: '';
         background-color: $beforebg-color;
         @include transition(0.5s);
     }
     img{
         width: 100%;
         @include transition(0.5s);
-    
     }
     img:hover{
         width: 100%;
-        -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        transform: scale(1.02);     
+        @include transform (scale(1.02));
+            
 
     }
 }
@@ -53,8 +51,9 @@
 .section-title{
     h4{
         @extend %sectionTitleOne;
+        font-weight: 500;
     }
-    h1{ 
+    h2{ 
        @extend %sectionTitleTwo;
 
     }
@@ -63,6 +62,7 @@ p{
     @extend %paraCss;
 }
 .section-button{
+    margin-top: 40px;
     a{
         @extend %btnTwoCss;
     }

@@ -99,6 +99,11 @@
     -webkit-transition: $s;
     -o-transition: $s;
     transition: $s;
-  
+}
+@mixin transform($trnsfrm){
+    -webkit-transform: $trnsfrm;
+    -ms-transform: $trnsfrm;
+    transform: $trnsfrm;
 
+    
 }

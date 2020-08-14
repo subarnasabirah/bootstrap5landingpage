@@ -1,0 +1,22 @@
+%sectionTitleOne{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    line-height: 1.2;
+  
+  }
+  %sectionTitleTwo{
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $title-color;
+    padding-bottom: 20px;
+    line-height: 1.2;
+  }
+  %paraCss{
+    margin: 0 0 15px;
+    font-size: 17px;
+    line-height: 31px;
+    color: $title-color;
+  }
