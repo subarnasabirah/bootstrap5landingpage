@@ -1,0 +1,98 @@
+.contact-area{
+    padding: 90px 80px;
+}
+.contact-content{
+    padding-right: 30px;
+}
+.contact-box{
+    padding: 15px;
+}
+.contact-icon{
+    text-align: right;
+    margin-bottom: -40px;
+}
+.form-d2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.form-d{
+    background-color: $frm-dbg-color;
+    border: 15px solid $frm-dbr-color;
+    padding: 30px;
+    margin-top: 60px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition (.5s);
+    margin-bottom: 80px;
+    &:hover{
+        -webkit-box-shadow: 0px 15px 15px 0px $light-color;
+        box-shadow: 0px 15px 15px 0px $light-color;
+        @include transform (translateY(-10px));
+
+    }
+    input[type="text"],
+    textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 35px;
+    resize: vertical;
+    background: transparent;
+    border-bottom: 2px solid $frm-br-btm;
+    @include transition (.5s);
+    &:focus{
+        border-bottom: 2px solid $focus-color;
+        padding: 12px 0 12px 15px;
+
+    }
+  }
+
+  input[type="email"]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 35px;
+    resize: vertical;
+    background: transparent;
+    border-bottom: 2px solid $frm-br-btm;
+    @include transition (.5s);
+    &:focus{
+        border-bottom: 2px solid $focus-color;
+        padding: 12px 0 12px 15px;
+
+    }
+}
+
+input[type=submit] {
+    background-color: $bg-color;
+    text-decoration: none;
+    color: $white-color;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 0;
+    @include transition (.5s);
+    font-size: 14px;
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    -webkit-box-shadow: 0 5px 16px #bababa;
+    box-shadow: 0 5px 16px #bababa;
+    border: 1px solid transparent;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    &:hover{
+        border: 1px solid $bg-color;
+        color: $bg-color;
+        background-color: $white-color;
+        -webkit-box-shadow: 0 5px 16px transparent;
+        box-shadow: 0 5px 16px transparent;
+        cursor: pointer
+
+    }
+}
+
+}
