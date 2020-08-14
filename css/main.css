@@ -227,4 +227,28 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .our-team:hover .post { color: #e2e2e2 !important; }
 
+.client-testimonial { padding: 90px 80px; }
+
+.testimonial-heading { text-align: center; display: inline-block; margin: auto; }
+
+.testimonial-heading h5 { font-weight: 900; font-size: 33px; letter-spacing: 1px; text-transform: uppercase; color: #686ab3; }
+
+.testimonial-heading h4 { position: relative; display: inline-block; text-transform: uppercase; color: #414142; font-size: 18px; margin-bottom: 80px; }
+
+.testimonial-heading h4::before { position: absolute; content: ""; width: 80px; height: 3px; background-color: #686ab3; left: 50%; bottom: -10px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+.single-testimonial { -webkit-box-shadow: 0 0 15px #ededed; box-shadow: 0 0 15px #ededed; text-align: center; padding: 30px; margin: 15px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+.single-testimonial:hover { -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); transform: translateY(-10px); -webkit-box-shadow: 0px 15px 15px 0px #edeaea; box-shadow: 0px 15px 15px 0px #edeaea; }
+
+.single-testimonial:hover .client-img img { border: 3px solid #6B6FFF; }
+
+.client-img img { width: 130px !important; height: 130px; margin: auto; margin-top: 5px; border-radius: 50%; border: 3px solid transparent; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+.testimonial-content h5 { margin-top: 15px; text-transform: uppercase; font-weight: 700; font-size: 19px; }
+
+.testimonial-content p { font-size: 15.5px; line-height: 26px; margin-bottom: 0; color: #414142; }
+
+.testimonial h6 { font-size: 16px; margin-top: -5px; }
+
 /*# sourceMappingURL=main.css.map */
