@@ -6,6 +6,23 @@
     text-align: left;
 }
 
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      font-weight: 500;
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+  
+    }
+  }
+  
+  p {
+    @extend %paraCss;
+  }
+
+
 .single-services{
     -webkit-box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
     box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);

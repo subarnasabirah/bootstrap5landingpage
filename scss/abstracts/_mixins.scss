@@ -50,6 +50,8 @@
 // /// @prop {String} keys - Keys are identifiers mapped to a given length
 // /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
+        'mobile-xxsm': 320px,
+        'mobile-xsm': 360px,
         'mobile-sm': 460px,
         'mobile-md': 576px,
         'mobile-lg': 767px,

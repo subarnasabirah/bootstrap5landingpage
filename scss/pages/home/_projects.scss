@@ -5,6 +5,22 @@
     text-align: left;
 }
 
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      font-weight: 500;
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+  
+    }
+  }
+  
+  p {
+    @extend %paraCss;
+  }
+
 .project-heading{
     h3{
         position: relative;
