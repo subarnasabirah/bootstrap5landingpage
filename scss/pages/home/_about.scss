@@ -1,6 +1,6 @@
 .about-us-area {
-  padding: 90px 80px;
-}
+  padding: 90px 0;
+
 
 .about-img {
   -webkit-box-shadow: 0 0 15px $boxshadow-color;
@@ -77,4 +77,6 @@ p {
     color: $bg-color;
     border: 1px solid $bg-color;
   }
+}
+
 }

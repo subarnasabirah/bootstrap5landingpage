@@ -1,4 +1,8 @@
-// Global variable
+
+
+// aos animation
+
+AOS.init();
 
 // preLoader 
 
@@ -42,6 +46,8 @@ $('.dot-list').owlCarousel({
     }
 });
 
+//counter
+
 $(window).on("load scroll",function(){
     startCounting();
 });
@@ -70,3 +76,13 @@ function isElementVisible($elementToBeChecked) {
     const BotElement = TopElement + $elementToBeChecked.height();
     return ((BotElement <= BotView) && (TopElement >= TopView));
 }
+
+//scrollup
+
+$.scrollUp({
+    scrollText: '<i class="fa fa-arrow-up" aria-hidden="true"></i>',
+    easingType: 'linear',
+    scrollSpeed: 1000,
+    animation: 'fade'
+});
+
