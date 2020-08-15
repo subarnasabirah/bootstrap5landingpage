@@ -57,6 +57,15 @@
 
   h2 {
     @extend %sectionTitleTwo;
+    
+    @include media('mobile-xsm') {
+      font-size: 28px;
+     
+    }
+    @include media('mobile-xxsm') {
+      font-size: 28px;
+      
+    }
 
   }
 }

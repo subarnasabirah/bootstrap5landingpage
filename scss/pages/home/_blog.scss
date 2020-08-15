@@ -37,8 +37,12 @@
 
 }
 .single-blog{
+    @include media('mobile-xxsm') {
+        top: 1022px;
+      }
     background-color: $white-color;
     overflow: hidden;
+    margin-bottom: 30px;
     .blog-image{
         position: relative;
         overflow: hidden;
@@ -80,6 +84,7 @@
 }
 
 .blog-content{
+
     padding: 20px 20px 25px 20px;
     p{
         font-size: 15.5px;
@@ -94,6 +99,11 @@
 
 
 .blog-content-heading{
+    @include media('mobile-xxsm') {
+        display: block;
+        width: 100%;
+      }
+
     display: inline-block;
     width: 70%;
     h4{
@@ -111,6 +121,10 @@
 }
 
 .blog-date{
+    @include media('mobile-xxsm') {
+        display: block;
+        width: 100%;
+      }
     display: inline-block;
     width: 28%;
     span{
@@ -118,6 +132,11 @@
         color: $spn-text-color;
         text-transform: capitalize;
         display: block;
+        @include media('mobile-xxsm') {
+            text-align: left;
+            display: block;
+            padding-bottom: 10px;
+          }
     }
 }
 

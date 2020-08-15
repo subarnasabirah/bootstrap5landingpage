@@ -175,7 +175,7 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 /* --------------------- 1 button --------------------- */
 .header-image-area .learnmore a { background-color: #6B6FFF; text-decoration: none; color: #fff; text-transform: uppercase; display: inline-block; font-size: 14px; font-weight: 700; }
 
-.about-us-area .section-button a { -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; background-color: #6B6FFF; text-decoration: none; color: #fff; text-transform: uppercase; display: inline-block; padding: 15px 0; font-size: 14px; font-weight: 700; width: 150px; text-align: center; -webkit-box-shadow: 0 5px 16px #bababa; box-shadow: 0 5px 16px #bababa; border: 1px solid transparent; }
+.about-us-area .section-button a, .services-area .section-button a, .projects-area .section-button a { -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; background-color: #6B6FFF; text-decoration: none; color: #fff; text-transform: uppercase; display: inline-block; padding: 15px 0; font-size: 14px; font-weight: 700; width: 150px; text-align: center; -webkit-box-shadow: 0 5px 16px #bababa; box-shadow: 0 5px 16px #bababa; border: 1px solid transparent; }
 
 .owl-carousel .owl-dots { text-align: center; padding-top: 10px; }
 
@@ -203,6 +203,10 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .about-us-area .section-title h4 { font-weight: 500; }
 
+@media all and (max-width: 360px) { .about-us-area .section-title h2 { transition: .5s; font-size: 28px; } }
+
+@media all and (max-width: 320px) { .about-us-area .section-title h2 { transition: .5s; font-size: 28px; } }
+
 .about-us-area .section-button { margin-top: 40px; }
 
 .about-us-area .section-button a:hover { background-color: #fff; color: #6B6FFF; border: 1px solid #6B6FFF; }
@@ -212,6 +216,14 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 .services-area .services-content { text-align: left; }
 
 .services-area .section-title h4 { font-weight: 500; }
+
+@media all and (max-width: 360px) { .services-area .section-title h2 { transition: .5s; font-size: 28px; } }
+
+@media all and (max-width: 320px) { .services-area .section-title h2 { transition: .5s; font-size: 28px; } }
+
+.services-area .section-button { margin-top: 40px; }
+
+.services-area .section-button a:hover { background-color: #fff; color: #6B6FFF; border: 1px solid #6B6FFF; }
 
 .services-area .single-services { -webkit-box-shadow: 0 0 15px rgba(218, 219, 255, 0.4); box-shadow: 0 0 15px rgba(218, 219, 255, 0.4); text-align: center; padding: 50px 0 0 0; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; background-color: #fff; margin-bottom: 25px; }
 
@@ -226,6 +238,14 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 .projects-area .projects-content { text-align: left; }
 
 .projects-area .section-title h4 { font-weight: 500; }
+
+@media all and (max-width: 360px) { .projects-area .section-title h2 { transition: .5s; font-size: 28px; } }
+
+@media all and (max-width: 320px) { .projects-area .section-title h2 { transition: .5s; font-size: 28px; } }
+
+.projects-area .section-button { margin-top: 40px; }
+
+.projects-area .section-button a:hover { background-color: #fff; color: #6B6FFF; border: 1px solid #6B6FFF; }
 
 .projects-area .project-heading h3 { position: relative; display: inline-block; font-weight: 700; text-transform: uppercase; color: #414142; font-size: 24px; line-height: 1.2; }
 
@@ -365,7 +385,9 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .latest-blog-area .blog-heading h4::before { position: absolute; content: ""; width: 80px; height: 3px; background-color: #fff; left: 50%; bottom: -10px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
-.latest-blog-area .single-blog { background-color: #fff; overflow: hidden; }
+.latest-blog-area .single-blog { background-color: #fff; overflow: hidden; margin-bottom: 30px; }
+
+@media all and (max-width: 320px) { .latest-blog-area .single-blog { transition: .5s; top: 1022px; } }
 
 .latest-blog-area .single-blog .blog-image { position: relative; overflow: hidden; }
 
@@ -387,13 +409,19 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .latest-blog-area .blog-content-heading { display: inline-block; width: 70%; }
 
+@media all and (max-width: 320px) { .latest-blog-area .blog-content-heading { transition: .5s; display: block; width: 100%; } }
+
 .latest-blog-area .blog-content-heading h4 a { font-size: 18px; color: #414142; text-transform: uppercase; font-weight: 700; text-decoration: none; }
 
 .latest-blog-area .blog-content-heading a { text-decoration: none; }
 
 .latest-blog-area .blog-date { display: inline-block; width: 28%; }
 
+@media all and (max-width: 320px) { .latest-blog-area .blog-date { transition: .5s; display: block; width: 100%; } }
+
 .latest-blog-area .blog-date span { font-size: 14px; color: #686868; text-transform: capitalize; display: block; }
+
+@media all and (max-width: 320px) { .latest-blog-area .blog-date span { transition: .5s; text-align: left; display: block; padding-bottom: 10px; } }
 
 .latest-blog-area .blog-readmore-btn { text-transform: capitalize; display: inline-block; font-size: 15px; font-weight: 700; color: #6B6FFF; position: relative; margin-top: 10px; }
 
