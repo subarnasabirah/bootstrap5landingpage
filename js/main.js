@@ -1,4 +1,7 @@
 // Global variable
+
+// preLoader 
+
 let countingFinish = false;
 const loader = document.getElementById('preloader');
 
@@ -14,6 +17,7 @@ function preLoader() {
     loader.style.display = 'none';
 }
 
+//carousel
 $('.dot-list').owlCarousel({
     loop: true,
     autoplayHoverPause: true,
