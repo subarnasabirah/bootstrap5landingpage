@@ -14,6 +14,8 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Raleway', sans-serif; }
 
+.container { max-width: 1200px; }
+
 /* --------------------- 2 Fonts --------------------- */
 /* ------------------- 3 Typography ------------------ */
 /* --------------------- 2. Layout --------------------- */
@@ -77,7 +79,7 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 .header-image-area .learnmore a:hover { background-color: #fff; color: #6B6FFF; }
 
 /* --------------------- 2 Footer --------------------- */
-.footer-area { background-image: url("../images/footer-bg.jpg"); -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 20%, 100% 100%, 100% 100%, 0 100%); position: relative; color: #fff; }
+.footer-area { background-image: url("../img/footer-bg.jpg"); -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 20%, 100% 100%, 100% 100%, 0 100%); position: relative; color: #fff; }
 
 .footer-area::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(53, 56, 153, 0.95); }
 
@@ -89,17 +91,21 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .footer-area .footer-top li a { text-decoration: none; }
 
-.footer-area .single-widget { padding-top: 30px; }
+.footer-area .single-widget { margin-top: 30px; }
 
 .footer-area .single-widget h2 { font-size: 20px; font-weight: 700; text-transform: capitalize; }
 
-.footer-area .single-widget .border-right { border-right: 2px solid #fff; }
+.footer-area .single-widget .border-right { border-right: 1px solid #fff; }
 
 .footer-area .company-logo img { width: 180px; }
 
 .footer-area .about-company p { color: #e5e5e5; font-size: 15.5px; line-height: 26px; margin-top: 20px; margin-bottom: 10px; }
 
 .footer-area .about-company ul.social li { display: inline-block; margin-right: 10px; padding-top: 10px; }
+
+@media all and (max-width: 991px) { .footer-area .about-company ul.social li { transition: .5s; margin-bottom: 10px; } }
+
+@media all and (max-width: 767px) { .footer-area .about-company ul.social li { transition: .5s; margin-bottom: 10px; } }
 
 .footer-area .about-company ul.social li a { display: inline-block; background-color: #fff; color: #2e307d; height: 30px; width: 30px; line-height: 30px; text-align: center; border-radius: 50%; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
@@ -121,6 +127,14 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .footer-area .newsletter .subscribe { border: none; background-color: #6B6FFF; color: #fff; padding: 10px 10px; cursor: pointer; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
+@media all and (max-width: 991px) { .footer-area .newsletter .subscribe { transition: .5s; position: absolute; left: 500px; } }
+
+@media all and (max-width: 767px) { .footer-area .newsletter .subscribe { transition: .5s; left: 395px; } }
+
+@media all and (max-width: 576px) { .footer-area .newsletter .subscribe { transition: .5s; left: 295px; } }
+
+@media all and (max-width: 460px) { .footer-area .newsletter .subscribe { transition: .5s; left: 16px; top: 945px; } }
+
 .footer-area .newsletter .subscribe:hover { background-color: #fff; color: #6B6FFF; }
 
 .footer-area .footer-bottom { position: relative; z-index: 99; background-color: #2e307d; height: 80px; }
@@ -132,6 +146,14 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 .footer-area .copyright a { text-decoration: none; }
 
 .footer-icon { text-align: right; position: absolute; right: 0; top: -80px; }
+
+@media all and (max-width: 991px) { .footer-icon { transition: .5s; top: -45px; } }
+
+@media all and (max-width: 767px) { .footer-icon { transition: .5s; top: -10px; } }
+
+@media all and (max-width: 576px) { .footer-icon { transition: .5s; top: -30px; } }
+
+@media all and (max-width: 460px) { .footer-icon { transition: .5s; top: -15px; } }
 
 /* ------------------- 3. components ------------------- */
 /* --------------------- 1 button --------------------- */
