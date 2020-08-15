@@ -49,27 +49,28 @@
 // /// Breakpoints map
 // /// @prop {String} keys - Keys are identifiers mapped to a given length
 // /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-// $breakpoints: (
-//         'small': 320px,
-//         'medium': 768px,
-//         'large': 1024px,
-// );
+$breakpoints: (
+        'mobile-sm': 460px,
+        'mobile-md': 576px,
+        'mobile-lg': 767px,
+        'tab': 991px,
+        'tab-md': 1199px,
+        'tab-lg': 1399px,
+);
 
+@mixin media($media) {
+  @media all and (max-width: #{map-get($breakpoints,#{$media})}) {
+    transition: .5s;
+    @content
+  }
+}
 
-// @mixin media($media){
-//   @media all and (max-width: #{map-get($breakpoints,#{$media})}){
-//     @content
-//   }
-// }
-// @mixin media-width($media-width){
-//   @media all and (max-width: #{$media-width}px){
-//     transition: .5s; // animate when window resizing
-//     @content
-//   }
-// }
-
-
-
+@mixin media-width($media-width) {
+  @media all and (max-width: #{$media-width}px) {
+    transition: .5s; // animate when window resizing
+    @content
+  }
+}
 
 // //--------------------------------------------------------------------------------
 // // ------------ Metarial Design Boxshadow Mixin
@@ -95,15 +96,15 @@
 //   }
 //   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 // }
-@mixin transition($s) {
-    -webkit-transition: $s;
-    -o-transition: $s;
-    transition: $s;
-}
-@mixin transform($trnsfrm){
-    -webkit-transform: $trnsfrm;
-    -ms-transform: $trnsfrm;
-    transform: $trnsfrm;
 
-    
+@mixin transition($s) {
+  -webkit-transition: $s;
+  -o-transition: $s;
+  transition: $s;
+}
+
+@mixin transform($trnsfrm) {
+  -webkit-transform: $trnsfrm;
+  -ms-transform: $trnsfrm;
+  transform: $trnsfrm;
 }
