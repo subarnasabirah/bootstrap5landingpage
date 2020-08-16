@@ -16,11 +16,10 @@
 
       @include media('mobile-xsm') {
         font-size: 28px;
-       
+        
       }
       @include media('mobile-xxsm') {
         font-size: 28px;
-        
       }
   
     }
@@ -70,11 +69,33 @@
     }
      
 }
-.projects-img img {
-    max-width: 100%;
+.projects-img {
+  @include media('tab') {
+    margin-bottom: 30px;
+  }
+  @include media('mobile-lg'){
+    margin-bottom: 30px;
+  }
+  @include media('mobile-md'){
+    margin-bottom: 30px;
+  }
+  @include media('mobile-sm'){
+    margin-bottom: 30px;
+  }
+  @include media('mobile-xsm') {
+    margin-bottom: 30px;
+  }
+  @include media('mobile-xxsm') {
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
     height: auto;
     vertical-align: middle;
     border-style: none;
+  }
+
 }
 .pa-margintop {
     padding-top: 40px;

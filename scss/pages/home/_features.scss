@@ -12,6 +12,16 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $blu-color;
+        @include media('mobile-xsm') {
+            font-size: 28px;
+           
+          }
+          @include media('mobile-xxsm') {
+            font-size: 28px;
+            
+          }
+
+
     }
     h4{
         position: relative;

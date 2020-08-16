@@ -37,11 +37,84 @@
 .navbar-brand {
   width: 200px;
   height: 55px;
+  display: inline-block;
+  @include media('tab') {
+   width: 180px;
+   margin-left: -40px;
+  }
+  @include media('mobile-lg') {
+    width: 160px;
+    margin-left: -40px;
+  }
+  @include media('mobile-md') {
+    width: 160px;
+    margin-left: -40px;
+  }
+  @include media('mobile-sm') {
+    width: 160px;
+    margin-left: -40px;
+  }
+  @include media('mobile-xsm') {
+    width: 160px;
+    margin-left: -40px;
+  }
+  @include media('mobile-xxsm') {
+    width: 160px;
+    margin-left: -40px;
+    
+  }
+  
+  
+}
+
+/*navbar toggle responsive style*/
+.navbar-toggler{
+@include media('tab') {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 0!important;
+  background-color: transparent!important;
+  border:none!important;
+  border-radius: 0!important;
+  transition: 0!important;
+  margin-right: -45px;
+  align-items: center;
+}
+&:focus{
+  text-decoration: none;
+        outline: 0;
+        box-shadow: none!important;
+}
+}
+/*down image*/
+.down_img{
+  @include media('tab') {
+    visibility: hidden;
+  }
+
 }
 
 /*navbar*/
 .navbar-nav {
+  @include media('tab') {
+    margin-top: 20px!important;
+    
+  }
+
   li {
+    @include media('tab') {
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      background: rgba(107,111,255,0.7);
+      border-top: 1px solid #ffffff80;
+      &.scrolled{
+        background: $brand-color!important;
+         @include transition (0.75s ease);
+      }
+    }
+
     a {
       font-size: 16px;
       font-weight: 500;
@@ -50,6 +123,18 @@
       position: relative;
       padding: 25px 0;
       text-transform: capitalize;
+
+      @include media('tab') {
+        color: $white-color;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 15px 22px;
+        text-align: left;
+        text-decoration: none;
+        text-transform: capitalize;
+        width: 93.7%;
+      }
     }
 
     a::before {
@@ -65,10 +150,17 @@
 
     a:hover::before {
       width: 80%;
+      @include media('tab') {
+        width: 0%;
+      }
+      
     }
 
     .active::before {
       width: 80% !important;
+      @include media('tab') {
+        width: 0%!important;
+      }
     }
 
     .dropdown {
@@ -85,6 +177,14 @@
       text-align: left;
       visibility: hidden;
       @include transition (0.75s ease);
+      @include media('tab') {
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background: rgba(107,111,255,0.7);
+        border-top: 1px solid #ffffff80;
+      }
 
     }
 
@@ -162,6 +262,25 @@ header.scrolled{
     background-size: cover;
     background-position: 50% 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 85%);
+    @include media('mobile-md'){
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+    }
+    @include media('mobile-sm'){
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+    }
+    @include media('mobile-xsm') {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+     
+    }
+    @include media('mobile-xxsm') {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 90%);
+    }
+
+
 
     &::before{
       content: '';
@@ -188,6 +307,25 @@ header.scrolled{
     color: $white-color;
     margin-bottom: 10px;
     font-weight: 900;
+    @include media('mobile-tab') {
+      font-size: 30px;
+    }
+    @include media('mobile-lg') {
+      font-size: 30px;
+    }
+    @include media('mobile-md') {
+      font-size: 30px;
+    }
+    @include media('mobile-sm') {
+      font-size: 30px;
+    }
+    @include media('mobile-xsm') {
+      font-size: 30px;
+      
+    }
+    @include media('mobile-xxsm') {
+      font-size: 30px;
+    }
   }
   h3{
     font-size: 18px;
@@ -195,6 +333,17 @@ header.scrolled{
     color: #e5e5e5;
     font-weight: 400;
     line-height: 28px;
+
+    @include media('tab') {
+      font-size: 20px;
+    }
+    @include media('mobile-xsm') {
+      font-size: 20px; 
+    }
+    @include media('mobile-xxsm') {
+      font-size: 20px;
+    }
+
   }
 }
 .learnmore{
