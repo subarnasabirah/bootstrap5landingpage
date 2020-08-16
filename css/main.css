@@ -162,13 +162,11 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .footer-area .single-widget { margin-top: 30px; }
 
+@media all and (max-width: 767px) { .footer-area .single-widget { transition: .5s; border-right: none !important; } }
+
 .footer-area .single-widget h2 { font-size: 20px; font-weight: 700; text-transform: capitalize; }
 
 .footer-area .single-widget .border-right { border-right: 2px solid #fff; }
-
-@media all and (max-width: ) { .footer-area .single-widget .border-right { transition: .5s; border-right: 2px solid transparent !important; } }
-
-@media all and (max-width: 767px) { .footer-area .single-widget .border-right { transition: .5s; border-right: 2px solid transparent !important; } }
 
 .footer-area .company-logo img { width: 180px; }
 

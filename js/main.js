@@ -4,6 +4,7 @@
 
 AOS.init();
 
+
 // preLoader 
 
 let countingFinish = false;
@@ -20,6 +21,8 @@ $(window).scroll(function () {
 function preLoader() {
     loader.style.display = 'none';
 }
+
+
 
 //carousel
 $('.dot-list').owlCarousel({

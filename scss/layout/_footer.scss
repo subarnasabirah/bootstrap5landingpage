@@ -65,6 +65,9 @@
   .single-widget {
     // padding-top: 30px;
     margin-top: 30px;
+    @include media('mobile-lg') {
+        border-right: none!important;
+       }
 
     h2 {
       font-size: 20px;
@@ -75,12 +78,12 @@
 
     .border-right {
       border-right: 2px solid $white-color;
-      @include media('mobile-xxs') {
-        border-right: 2px solid transparent!important;
-      }
-      @include media('mobile-lg') {
-        border-right: 2px solid transparent!important;
-      }
+      // @include media('mobile-lg') {
+      //   border-right: 2px solid transparent!important;
+      // }
+      // @include media('mobile-xxs') {
+      //   border-right: 2px solid transparent!important;
+      // }
       
     }
     
