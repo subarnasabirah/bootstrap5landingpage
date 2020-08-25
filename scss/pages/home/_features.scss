@@ -1,7 +1,7 @@
 .our-features {
-    padding: 90px 80px;
+    padding: 90px 0;
     background-color: $contnt-bg-color;
-}
+
 .features-heading {
     text-align: center;
     display: inline-block;
@@ -12,6 +12,16 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $blu-color;
+        @include media('mobile-xsm') {
+            font-size: 28px;
+           
+          }
+          @include media('mobile-xxsm') {
+            font-size: 28px;
+            
+          }
+
+
     }
     h4{
         position: relative;
@@ -99,5 +109,7 @@
         font-size: 15.5px;
         line-height: 27px
     }
+
+}
 
 }

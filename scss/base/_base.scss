@@ -30,10 +30,10 @@
 // /**
 //  * Basic styles for links
 //  */
-// a {
-//   color: $brand-color;
-//   text-decoration: none;
-// }
+a {
+  color: $brand-color;
+  text-decoration: none;
+}
 
 
 // img{
@@ -51,3 +51,14 @@
 //   flex-direction: column;
 //   justify-content: center;
 // }
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Raleway', sans-serif;
+  }
+  .container{
+    max-width: 1200px;
+  }

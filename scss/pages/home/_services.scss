@@ -1,10 +1,51 @@
 .services-area {
-    padding: 90px 80px;
+    padding: 90px 0;
     background-color: $contnt-bg-color;
-}
+
 .services-content{
     text-align: left;
 }
+
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      font-weight: 500;
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+      @include media('mobile-xsm') {
+        font-size: 28px;
+      }
+      @include media('mobile-xxsm') {
+        font-size: 28px;
+      }
+  
+    }
+}
+  
+  
+  p {
+    @extend %paraCss;
+  }
+
+
+  .section-button {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  
+    a {
+      @extend %btnTwoCss;
+    }
+  
+    a:hover {
+      background-color: $white-color;
+      color: $bg-color;
+      border: 1px solid $bg-color;
+    }
+  }
+
+
 
 .single-services{
     -webkit-box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
@@ -32,4 +73,5 @@
     padding-bottom: 50px;
     color: #555454;
     font-weight: 700;
+}
 }

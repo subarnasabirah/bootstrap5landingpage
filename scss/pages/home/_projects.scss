@@ -1,9 +1,49 @@
 .projects-area {
-    padding: 90px 80px;
-}
+    padding: 90px 0;
+
 .projects-content {
     text-align: left;
 }
+
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      font-weight: 500;
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+
+      @include media('mobile-xsm') {
+        font-size: 28px;
+        
+      }
+      @include media('mobile-xxsm') {
+        font-size: 28px;
+      }
+  
+    }
+}
+  
+  
+  p {
+    @extend %paraCss;
+  }
+
+  .section-button {
+    margin-top: 40px;
+  
+    a {
+      @extend %btnTwoCss;
+    }
+  
+    a:hover {
+      background-color: $white-color;
+      color: $bg-color;
+      border: 1px solid $bg-color;
+    }
+  }
+
 
 .project-heading{
     h3{
@@ -29,11 +69,33 @@
     }
      
 }
-.projects-img img {
-    max-width: 100%;
+.projects-img {
+  @include media('tab') {
+    margin-bottom: 30px;
+  }
+  @include media('mobile-lg'){
+    margin-bottom: 30px;
+  }
+  @include media('mobile-md'){
+    margin-bottom: 30px;
+  }
+  @include media('mobile-sm'){
+    margin-bottom: 30px;
+  }
+  @include media('mobile-xsm') {
+    margin-bottom: 30px;
+  }
+  @include media('mobile-xxsm') {
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
     height: auto;
     vertical-align: middle;
     border-style: none;
+  }
+
 }
 .pa-margintop {
     padding-top: 40px;
@@ -108,31 +170,6 @@
         color: $white-color;
 
     }
-
 }
 
-.owl-carousel{
-    .owl-dot{
-        background-color: rgba(107, 111, 255, 0.5) !important;
-        display: inline-block;
-        height: 15px;
-        margin: 0 3px;
-        width: 15px;
-        border-radius: 100%;
-        &.active{
-            background-color: $bg-color !important;
-            height: 15px;
-            width: 15px;
-            border-radius: 100%;
-
-        }
-        .owl-dots{
-            text-align: center!important;
-            margin-top: 30px;
-
-        }
-
-    }
-
-    
 }

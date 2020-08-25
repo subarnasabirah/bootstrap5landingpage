@@ -1,6 +1,6 @@
 .contact-area{
-    padding: 90px 80px;
-}
+    padding: 90px 0;
+
 .contact-content{
     padding-right: 30px;
 }
@@ -10,7 +10,47 @@
 .contact-icon{
     text-align: right;
     margin-bottom: -40px;
+    @include media('mobile-xsm') {
+        margin-bottom: 30px;
+      }
+      @include media('mobile-xxsm') {
+        margin-bottom: 30px;
+      }
 }
+
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      font-weight: 500;
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+
+      @include media('mobile-xsm') {
+        font-size: 28px;
+       
+      }
+      @include media('mobile-xxsm') {
+        font-size: 28px;
+        
+      }
+  
+    }
+
+
+
+  }
+  
+  p {
+    @extend %paraCss;
+  }
+
+
+
+
+
+
 .form-d2{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -42,9 +82,30 @@
     background: transparent;
     border-bottom: 2px solid $frm-br-btm;
     @include transition (.5s);
+      @include media('mobile-xsm') {
+        padding: 5px;
+        margin-bottom: 20px;
+       
+      }
+      @include media('mobile-xxsm') {
+        padding: 5px;
+        margin-bottom: 20px;
+      
+      }
+
+
     &:focus{
         border-bottom: 2px solid $focus-color;
         padding: 12px 0 12px 15px;
+
+        @include media('mobile-xsm') {
+            padding: 5px 0 5px 7px;
+           
+          }
+          @include media('mobile-xxsm') {
+            padding: 5px 0 5px 7px;
+          
+          }
 
     }
   }
@@ -59,9 +120,27 @@
     background: transparent;
     border-bottom: 2px solid $frm-br-btm;
     @include transition (.5s);
+    
+    @include media('mobile-xsm') {
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    @include media('mobile-xxsm') {
+      padding: 5px;
+      margin-bottom: 20px;
+    }
     &:focus{
         border-bottom: 2px solid $focus-color;
         padding: 12px 0 12px 15px;
+
+        @include media('mobile-xsm') {
+            padding: 5px 0 5px 7px;
+           
+          }
+          @include media('mobile-xxsm') {
+            padding: 5px 0 5px 7px;
+          
+          }
 
     }
 }
@@ -84,6 +163,18 @@ input[type=submit] {
     margin: auto;
     display: block;
     margin-top: 20px;
+    @include media('mobile-xsm') {
+        margin-top: 8px;
+        padding: 12px 0;
+       
+      }
+      @include media('mobile-xxsm') {
+        margin-top: 8px;
+        padding: 12px 0;
+      
+      }
+
+    
     &:hover{
         border: 1px solid $bg-color;
         color: $bg-color;
@@ -93,6 +184,8 @@ input[type=submit] {
         cursor: pointer
 
     }
+}
+
 }
 
 }

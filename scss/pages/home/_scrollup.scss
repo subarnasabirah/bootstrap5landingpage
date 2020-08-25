@@ -1,0 +1,19 @@
+#scrollUp {
+    background: $brand-color;
+    bottom: 15px;
+    color: $white-color;
+    height: 50px;
+    line-height: 50px;
+    right: 15px;
+    text-align: center;
+    @include transition(.5s);
+    width: 50px;
+}
+
+// .margin-boottom20 {
+//     margin-bottom: 20px
+// }
+
+// .margin-boottom30 {
+//     margin-bottom: 30px
+// }

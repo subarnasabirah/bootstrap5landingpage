@@ -1,4 +1,12 @@
-// Global variable
+
+
+// aos animation
+
+AOS.init();
+
+
+// preLoader 
+
 let countingFinish = false;
 const loader = document.getElementById('preloader');
 
@@ -14,6 +22,9 @@ function preLoader() {
     loader.style.display = 'none';
 }
 
+
+
+//carousel
 $('.dot-list').owlCarousel({
     loop: true,
     autoplayHoverPause: true,
@@ -37,6 +48,8 @@ $('.dot-list').owlCarousel({
         }
     }
 });
+
+//counter
 
 $(window).on("load scroll",function(){
     startCounting();
@@ -66,3 +79,13 @@ function isElementVisible($elementToBeChecked) {
     const BotElement = TopElement + $elementToBeChecked.height();
     return ((BotElement <= BotView) && (TopElement >= TopView));
 }
+
+//scrollup
+
+$.scrollUp({
+    scrollText: '<i class="fa fa-arrow-up" aria-hidden="true"></i>',
+    easingType: 'linear',
+    scrollSpeed: 1000,
+    animation: 'fade'
+});
+
