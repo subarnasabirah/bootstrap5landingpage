@@ -1,0 +1,25 @@
+.our-mission {
+    padding: 90px 0;
+}
+
+.mission-content {
+    padding-top: 0;
+    ul{
+        //margin-left: 20px;
+        li{
+            list-style: none;
+            list-style-image: url('../img/mission/list.png');
+            line-height: 28px
+        }
+    }
+}
+
+.mission-list {
+    //padding-left: 15px;
+    list-style: disc;
+}
+.about-mission{
+    img{
+        width: 100%;
+    }
+}

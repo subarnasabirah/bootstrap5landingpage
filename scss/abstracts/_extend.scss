@@ -20,4 +20,16 @@
     line-height: 31px;
     color: $title-color;
   }
- 
+ %vdoPlyBtn{
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: $brand-color;
+  border-radius: 50%;
+  @include transform (translateX(-50%) translateY(-50%));
+ }

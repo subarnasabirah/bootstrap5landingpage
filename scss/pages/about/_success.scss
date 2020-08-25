@@ -1,0 +1,259 @@
+.about {
+    height: 65vh;
+    background-image: url('../img/about/about-page-bg.jpg');
+}
+
+.success-area {
+    padding: 90px 0;
+}
+
+.about-p-reduce {
+    padding-top: 0;
+}
+
+
+
+.header-text{
+    position: absolute;
+    left: 0%;
+    top: 37%;
+    margin: auto;
+    right: 0;
+    text-align: center;
+    h1{
+      text-transform: uppercase;
+      font-size: 42px;
+      letter-spacing: 1px;
+      color: $white-color;
+      margin-bottom: 10px;
+      font-weight: 900;
+      @include media('mobile-tab') {
+        font-size: 30px;
+      }
+      @include media('mobile-lg') {
+        font-size: 30px;
+      }
+      @include media('mobile-md') {
+        font-size: 30px;
+      }
+      @include media('mobile-sm') {
+        font-size: 30px;
+      }
+      @include media('mobile-xsm') {
+        font-size: 30px;
+        
+      }
+      @include media('mobile-xxsm') {
+        font-size: 30px;
+      }
+    }
+    h3{
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #e5e5e5;
+      font-weight: 400;
+      line-height: 28px;
+  
+      @include media('tab') {
+        font-size: 20px;
+      }
+      @include media('mobile-xsm') {
+        font-size: 20px; 
+      }
+      @include media('mobile-xxsm') {
+        font-size: 20px;
+      }
+  
+    }
+  }
+
+.about-content {
+    text-align: right;
+}
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      font-weight: 500;
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+      
+      @include media('mobile-xsm') {
+        font-size: 28px;
+       
+      }
+      @include media('mobile-xxsm') {
+        font-size: 28px;
+        
+      }
+  
+    }
+  }
+  
+  p {
+    @extend %paraCss;
+  }
+  
+  .section-button {
+    margin-top: 40px;
+  
+    a {
+      @extend %btnTwoCss;
+    }
+  
+    a:hover {
+      background-color: $white-color;
+      color: $bg-color;
+      border: 1px solid $bg-color;
+    }
+  }
+
+
+
+/*========== Video Section ================*/
+
+.video-content{
+    padding-top: 0;
+}
+
+.video-play-button{
+    &::before{
+       @extend %vdoPlyBtn;
+        -webkit-animation: pulse-border 1500ms ease-out infinite;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+    &::after{
+        @extend %vdoPlyBtn;
+        @include transition(all 200ms);
+    }
+    &:hover::after{
+        background-color: #9352f0a6;
+    }
+    img{
+        position: relative;
+        z-index: 3;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    span{
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 0px;
+        height: 0;
+        border-left: 20px solid $white-color;
+        border-top: 14px solid transparent;
+        border-bottom: 13px solid transparent;
+        margin-right: -6px;
+    }
+}
+
+@-webkit-keyframes pulse-border {
+    0% {
+        @include transform ( translateX(-50%) translateY(-50%) translateZ(0) scale(1));
+        opacity: 1;
+    }
+
+    100% {
+        @include transform ( translateX(-50%) translateY(-50%) translateZ(0) scale(1.5));
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        @include transform ( translateX(-50%) translateY(-50%) translateZ(0) scale(1));
+        opacity: 1;
+    }
+
+    100% {
+        @include transform ( translateX(-50%) translateY(-50%) translateZ(0) scale(1.5));
+        opacity: 0;
+    }
+}
+
+.video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    @include transition(all ease 500ms);
+    &.open{
+        position: fixed;
+        z-index: 1000;
+        opacity: 1;
+    }
+    iframe{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform ( translateX(-50%) translateY(-50%));
+        -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+
+    }
+}
+
+.video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: $white-color;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition (all 200ms);
+    &:hover{
+        color: #fa183d;
+    }
+}
+
+.youtube-video-wrapper {
+    background: url('../img/about/about-video-bg.jpg') top center no-repeat;
+    background-size: initial;
+    padding: 160px 0;
+    position: relative;
+    text-align: center;
+}
+
+.popup-gallery {
+    display: inline-block;
+    position: relative;
+    a:hover,
+    a:focus,
+    a:active,
+    a:visited {
+    text-decoration: none;
+    }
+}
+.youtube-video-icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50% 50%;
+    display: inline-block;
+    background: $white-color;
+    @include transition (all 0.4s ease-in-out);
+    a,
+    a:hover,
+    a:focus {
+    text-decoration: none;
+    outline: 0;
+    }
+    i{
+        font-size: 60px;
+        line-height: 100px;
+        color: #6B02FF;
+        margin-left: 10px;
+        @include transition (all 0.4s ease-in-out);
+    }
+}
