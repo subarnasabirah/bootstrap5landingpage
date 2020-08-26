@@ -12,7 +12,6 @@
 }
 
 
-
 .header-text{
     position: absolute;
     left: 0%;
@@ -70,6 +69,33 @@
 .about-content {
     text-align: right;
 }
+
+.margin-top-r{
+  @include media('tab') {
+    margin-top: 30px;
+    
+  }
+  @include media('mobile-lg'){
+    margin-top: 30px;
+    
+  }
+  @include media('mobile-md'){
+    margin-top: 30px;
+    
+  }
+  @include media('mobile-sm'){
+    margin-top: 30px;
+    
+  }
+  @include media('mobile-xsm') {
+    margin-top: 30px;
+    
+  }
+  @include media('mobile-xxsm') {
+    margin-top: 30px;
+    
+  }
+}
 .section-title {
     h4 {
       @extend %sectionTitleOne;
@@ -78,7 +104,14 @@
   
     h2 {
       @extend %sectionTitleTwo;
-      
+      @include media('mobile-md') {
+        font-size: 28px;
+       
+      }
+      @include media('mobile-sm') {
+        font-size: 28px;
+        
+      }
       @include media('mobile-xsm') {
         font-size: 28px;
        

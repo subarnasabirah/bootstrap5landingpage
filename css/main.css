@@ -162,6 +162,8 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .footer-area .single-widget { margin-top: 30px; }
 
+.footer-area .single-widget ul { margin: 0px; padding: 0px; }
+
 @media all and (max-width: 767px) { .footer-area .single-widget { transition: .5s; border-right: none !important; } }
 
 .footer-area .single-widget h2 { font-size: 20px; font-weight: 700; text-transform: capitalize; }
@@ -169,6 +171,8 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 .footer-area .single-widget .border-right { border-right: 2px solid #fff; }
 
 .footer-area .company-logo img { width: 180px; }
+
+.footer-area .about-company { padding-right: 60px; }
 
 .footer-area .about-company p { color: #e5e5e5; font-size: 15.5px; line-height: 26px; margin-top: 20px; margin-bottom: 10px; }
 
@@ -202,13 +206,13 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 @media all and (max-width: 767px) { .footer-area .newsletter .subscribe { transition: .5s; left: 395px; } }
 
-@media all and (max-width: 575px) { .footer-area .newsletter .subscribe { transition: .5s; left: 16px; top: 940px; } }
+@media all and (max-width: 575px) { .footer-area .newsletter .subscribe { transition: .5s; left: 16px; top: 900px; } }
 
-@media all and (max-width: 460px) { .footer-area .newsletter .subscribe { transition: .5s; left: 16px; top: 900px; } }
+@media all and (max-width: 460px) { .footer-area .newsletter .subscribe { transition: .5s; left: 16px; top: 920px; } }
 
 @media all and (max-width: 360px) { .footer-area .newsletter .subscribe { transition: .5s; left: 16px; top: 950px; } }
 
-@media all and (max-width: 320px) { .footer-area .newsletter .subscribe { transition: .5s; top: 980px; } }
+@media all and (max-width: 320px) { .footer-area .newsletter .subscribe { transition: .5s; top: 975px; } }
 
 .footer-area .newsletter .subscribe:hover { background-color: #fff; color: #6B6FFF; }
 
@@ -600,7 +604,23 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .about-content { text-align: right; }
 
+@media all and (max-width: 991px) { .margin-top-r { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 767px) { .margin-top-r { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 575px) { .margin-top-r { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 460px) { .margin-top-r { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 360px) { .margin-top-r { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 320px) { .margin-top-r { transition: .5s; margin-top: 30px; } }
+
 .section-title h4 { font-weight: 500; }
+
+@media all and (max-width: 575px) { .section-title h2 { transition: .5s; font-size: 28px; } }
+
+@media all and (max-width: 460px) { .section-title h2 { transition: .5s; font-size: 28px; } }
 
 @media all and (max-width: 360px) { .section-title h2 { transition: .5s; font-size: 28px; } }
 
@@ -699,6 +719,6 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .brand-item { padding: 20px; text-align: center; }
 
-.brand-item img { width: 100%; }
+.brand-item img { max-width: 100%; height: auto; }
 
 /*# sourceMappingURL=main.css.map */

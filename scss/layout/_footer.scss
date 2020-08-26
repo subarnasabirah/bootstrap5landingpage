@@ -63,6 +63,10 @@
   }
 
   .single-widget {
+    ul{
+      margin: 0px;
+      padding: 0px;
+    }
     // padding-top: 30px;
     margin-top: 30px;
     @include media('mobile-lg') {
@@ -95,6 +99,7 @@
   }
 
   .about-company {
+    padding-right: 60px;
     p {
       color: $ftr-color;
       font-size: 15.5px;
@@ -104,6 +109,7 @@
     }
 
     ul {
+     
       &.social {
         li {
           display: inline-block;
@@ -212,18 +218,18 @@
       }
       @include media('mobile-md'){
         left: 16px;
-        top: 940px;
+        top: 900px;
       }
       @include media('mobile-sm'){
         left: 16px;
-        top: 900px;
+        top: 920px;
       }
       @include media('mobile-xsm') {
         left: 16px;
         top: 950px;
       }
       @include media('mobile-xxsm') {
-        top: 980px;
+        top: 975px;
       }
       
       &:hover {
