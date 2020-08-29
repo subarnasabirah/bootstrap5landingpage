@@ -21,20 +21,7 @@
 	text-align: left;
 	-webkit-box-shadow: 0 8px 7px -2px #eff0f0;
     box-shadow: 0 8px 7px -2px #eff0f0;
-    @include media('tab') {
-        margin: 0 20px;
-        
-      }
-      @include media('mobile-lg'){
-        margin: 0 20px;
-        
-      }
-
-      @include media('mobile-md'){
-        margin: 0 15px;
-        bottom: 80px;
-        
-      }
+    
       @include media('mobile-sm'){
         margin: 0 15px;
         bottom: 80px;
@@ -83,7 +70,7 @@
 }
 .blog-content{
 
-    padding: 20px 20px 25px 20px;
+    // padding: 20px 20px 25px 20px;
     p{
         font-size: 15.5px;
         line-height: 26px;
