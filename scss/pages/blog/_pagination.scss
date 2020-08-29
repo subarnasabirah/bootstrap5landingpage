@@ -1,0 +1,26 @@
+.center {
+    text-align: center;
+}
+.pagination {
+    display: inline-block;
+    a{
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        @include transition (.5s);
+        border-radius: 25px;
+        margin: 0 4px;
+        border: 1px solid transparent;
+        &.active{
+            background-color: $brand-color;
+            color: $white-color;
+            border: 1px solid $brand-color;
+
+        }
+    }
+    a:hover:not(.active) {
+        color: $brand-color;
+        border: 1px solid $brand-color;
+    }
+}
