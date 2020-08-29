@@ -1,0 +1,236 @@
+.single-project-image {
+    overflow: hidden;
+    img{
+        @include transition (1s);
+
+        @include media('tab') {
+            width: 100%;
+            
+          }
+          @include media('mobile-lg'){
+            width: 100%;
+            
+          }
+          @include media('mobile-md'){
+            width: 100%;
+            
+          }
+          @include media('mobile-sm'){
+            width: 100%;
+            
+          }
+          @include media('mobile-xsm') {
+            width: 100%;
+            
+          }
+          @include media('mobile-xxsm') {
+            width: 100%;
+          }
+    }
+    &:hover img{
+        @include transform (scale(1.1));
+    }
+}
+
+.pa-margintop {
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+.projects-img{
+    img{
+        max-width: 100%;
+        height: auto;
+        @include media('tab') {
+            width: 100%;
+            
+          }
+          @include media('mobile-lg'){
+            width: 100%;
+            
+          }
+          @include media('mobile-md'){
+            width: 100%;
+            
+          }
+          @include media('mobile-sm'){
+            width: 100%;
+            
+          }
+          @include media('mobile-xsm') {
+            width: 100%;
+            
+          }
+          @include media('mobile-xxsm') {
+            width: 100%;
+          }
+    }
+}
+.margin-top-project{
+    
+      @include media('mobile-md'){
+        margin-top: 30px;
+        
+      }
+      @include media('mobile-sm'){
+        margin-top: 30px;
+      }
+      @include media('mobile-xsm') {
+        margin-top: 30px;
+      }
+      @include media('mobile-xxsm') {
+        margin-top: 30px;
+      }
+
+&:hover img{
+    @include transform (scale(1.1));
+}
+}
+
+.pa-margintop {
+padding-top: 40px;
+margin-bottom: 30px;
+}
+.projects-img{
+img{
+    max-width: 100%;
+    height: auto;
+    @include media('tab') {
+        width: 100%;
+        
+      }
+      @include media('mobile-lg'){
+        width: 100%;
+        
+      }
+      @include media('mobile-md'){
+        width: 100%;
+        
+      }
+      @include media('mobile-sm'){
+        width: 100%;
+        
+      }
+      @include media('mobile-xsm') {
+        width: 100%;
+        
+      }
+      @include media('mobile-xxsm') {
+        width: 100%;
+      }
+}
+
+}
+
+
+.projects-content {
+    text-align: left;
+}
+.single-project-area{
+    .single-project-text1{
+        margin-bottom: 30px;
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    h2{
+        font-weight: 600;
+        margin-bottom: 6px;
+        font-size: 25px;
+    }
+    .project-info{
+        background-color: #f4f6f8;
+        padding: 25px 27px 20px;
+        h4{
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+        ul{
+            li{
+                line-height: 30px;
+                span{
+                    display: inline-block;
+                    &.name{
+                        width: 23.6%;
+                    }
+                    &.info{
+                        padding-left: 48px;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.single-project-gallary{
+    padding-left: 0;
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.project-testimonial{
+    margin: 0;
+    margin-top: 15px;
+}
+
+.single-testimonial{
+    -webkit-box-shadow: 0 0 15px #ededed;
+    box-shadow: 0 0 15px #ededed;
+    text-align: center;
+    padding: 30px;
+    margin: 15px;
+    @include transition (.5s);
+    &:hover{
+        @include transform (translateY(-10px));
+        -webkit-box-shadow: 0px 15px 15px 0px $light-color;
+        box-shadow: 0px 15px 15px 0px $light-color;
+
+    }
+    &:hover .client-img img{
+        border: 3px solid $bg-color;
+
+    }
+
+}
+.client-img{
+    img{
+        width: 130px!important;
+        height: 130px;
+        margin: auto;
+        margin-top: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        @include transition (.5s);
+
+    }
+}
+
+.testimonial-content{
+    h5{
+        margin-top: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 19px;
+    }
+    p{
+        font-size: 15.5px;
+        line-height: 26px;
+        margin-bottom: 0;
+        color: $title-color; 
+    }
+}
+.testimonial h6{
+    font-size: 16px;
+    margin-top: -5px;
+}
+.project-grid-padright{
+    padding-right: 5px;
+}
+
+.project-grid-padleft{
+    padding-left: 5px;
+}

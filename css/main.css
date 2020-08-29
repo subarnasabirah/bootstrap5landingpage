@@ -254,6 +254,8 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .owl-carousel .owl-dots .owl-dot .owl-dots { text-align: center !important; margin-top: 30px; }
 
+#scrollUp { background: #6B6FFF; bottom: 15px; color: #fff; height: 50px; line-height: 50px; right: 15px; text-align: center; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; width: 50px; }
+
 /* --------------------- 4. pages ---------------------- */
 /* -----------------  1. Home page ---------------- */
 .about-us-area { padding: 90px 0; }
@@ -570,8 +572,6 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .contact-area .form-d input[type=submit]:hover { border: 1px solid #6B6FFF; color: #6B6FFF; background-color: #fff; -webkit-box-shadow: 0 5px 16px transparent; box-shadow: 0 5px 16px transparent; cursor: pointer; }
 
-#scrollUp { background: #6B6FFF; bottom: 15px; color: #fff; height: 50px; line-height: 50px; right: 15px; text-align: center; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; width: 50px; }
-
 .about { height: 65vh; background-image: url("../img/about/about-page-bg.jpg"); }
 
 .success-area { padding: 90px 0; }
@@ -685,7 +685,7 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .our-expertise { padding: 90px 0; }
 
-.expertise-heading { text-align: center; margin: auto; }
+.expertise-heading { text-align: center; }
 
 .expertise-heading h2 { font-weight: 900; font-size: 33px; letter-spacing: 1px; text-transform: uppercase; color: #414142; }
 
@@ -720,5 +720,117 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 .brand-item { padding: 20px; text-align: center; }
 
 .brand-item img { max-width: 100%; height: auto; }
+
+.project { height: 65vh; background-image: url("../img/about/about-page-bg.jpg"); }
+
+.projects-area-single-page { padding: 90px 0; }
+
+.project-single { padding: 90px 0; }
+
+.single-project-area { margin: -6px 0px 0px 2px; }
+
+.single-project-image { overflow: hidden; }
+
+.single-project-image img { -webkit-transition: 1s; -o-transition: 1s; transition: 1s; }
+
+@media all and (max-width: 991px) { .single-project-image img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 767px) { .single-project-image img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 575px) { .single-project-image img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 460px) { .single-project-image img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 360px) { .single-project-image img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 320px) { .single-project-image img { transition: .5s; width: 100%; } }
+
+.single-project-image:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.pa-margintop { padding-top: 40px; margin-bottom: 30px; }
+
+.projects-img img { max-width: 100%; height: auto; }
+
+@media all and (max-width: 991px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 767px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 575px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 460px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 360px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 320px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 575px) { .margin-top-project { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 460px) { .margin-top-project { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 360px) { .margin-top-project { transition: .5s; margin-top: 30px; } }
+
+@media all and (max-width: 320px) { .margin-top-project { transition: .5s; margin-top: 30px; } }
+
+.margin-top-project:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.pa-margintop { padding-top: 40px; margin-bottom: 30px; }
+
+.projects-img img { max-width: 100%; height: auto; }
+
+@media all and (max-width: 991px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 767px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 575px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 460px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 360px) { .projects-img img { transition: .5s; width: 100%; } }
+
+@media all and (max-width: 320px) { .projects-img img { transition: .5s; width: 100%; } }
+
+.projects-content { text-align: left; }
+
+.single-project-area .single-project-text1 { margin-bottom: 30px; }
+
+.single-project-area .single-project-text1 p { margin-bottom: 30px; }
+
+.single-project-area h2 { font-weight: 600; margin-bottom: 6px; font-size: 25px; }
+
+.single-project-area .project-info { background-color: #f4f6f8; padding: 25px 27px 20px; }
+
+.single-project-area .project-info h4 { font-weight: 600; margin-bottom: 22px; }
+
+.single-project-area .project-info ul li { line-height: 30px; }
+
+.single-project-area .project-info ul li span { display: inline-block; }
+
+.single-project-area .project-info ul li span.name { width: 23.6%; }
+
+.single-project-area .project-info ul li span.info { padding-left: 48px; }
+
+.single-project-gallary { padding-left: 0; }
+
+.single-project-gallary img { width: 100%; height: auto; margin-bottom: 10px; }
+
+.project-testimonial { margin: 0; margin-top: 15px; }
+
+.single-testimonial { -webkit-box-shadow: 0 0 15px #ededed; box-shadow: 0 0 15px #ededed; text-align: center; padding: 30px; margin: 15px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+.single-testimonial:hover { -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); transform: translateY(-10px); -webkit-box-shadow: 0px 15px 15px 0px #edeaea; box-shadow: 0px 15px 15px 0px #edeaea; }
+
+.single-testimonial:hover .client-img img { border: 3px solid #6B6FFF; }
+
+.client-img img { width: 130px !important; height: 130px; margin: auto; margin-top: 5px; border-radius: 50%; border: 3px solid transparent; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+.testimonial-content h5 { margin-top: 15px; text-transform: uppercase; font-weight: 700; font-size: 19px; }
+
+.testimonial-content p { font-size: 15.5px; line-height: 26px; margin-bottom: 0; color: #414142; }
+
+.testimonial h6 { font-size: 16px; margin-top: -5px; }
+
+.project-grid-padright { padding-right: 5px; }
+
+.project-grid-padleft { padding-left: 5px; }
 
 /*# sourceMappingURL=main.css.map */
