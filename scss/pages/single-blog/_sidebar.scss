@@ -194,4 +194,17 @@
     text-align: left;
     -webkit-box-shadow: 0 8px 7px -2px #eff0f0;
     box-shadow: 0 8px 7px -2px #eff0f0;
+   
+      @include media('mobile-sm'){
+        margin: 0 15px;
+        bottom: 80px;
+      }
+      @include media('mobile-xsm') {
+        margin: 0 15px;
+        bottom: 80px;
+      }
+      @include media('mobile-xxsm') {
+        margin: 0 15px;
+        bottom: 80px;
+      }
 }

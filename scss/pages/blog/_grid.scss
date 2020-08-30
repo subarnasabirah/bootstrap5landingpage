@@ -106,6 +106,14 @@
 }
 
 .blog-date{
+    @include media('mobile-sm') {
+        display: block;
+        width: 100%;
+      }
+    @include media('mobile-xsm') {
+        display: block;
+        width: 100%;
+      }
     @include media('mobile-xxsm') {
         display: block;
         width: 100%;
@@ -117,6 +125,16 @@
         color: $spn-text-color;
         text-transform: capitalize;
         display: block;
+        @include media('mobile-sm') {
+            text-align: left;
+            display: block;
+            padding-bottom: 10px;
+          }
+        @include media('mobile-xsm') {
+            text-align: left;
+            display: block;
+            padding-bottom: 10px;
+          }
         @include media('mobile-xxsm') {
             text-align: left;
             display: block;

@@ -897,9 +897,17 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .blog-date { display: inline-block; width: 28%; }
 
+@media all and (max-width: 460px) { .blog-date { transition: .5s; display: block; width: 100%; } }
+
+@media all and (max-width: 360px) { .blog-date { transition: .5s; display: block; width: 100%; } }
+
 @media all and (max-width: 320px) { .blog-date { transition: .5s; display: block; width: 100%; } }
 
 .blog-date span { font-size: 14px; color: #686868; text-transform: capitalize; display: block; }
+
+@media all and (max-width: 460px) { .blog-date span { transition: .5s; text-align: left; display: block; padding-bottom: 10px; } }
+
+@media all and (max-width: 360px) { .blog-date span { transition: .5s; text-align: left; display: block; padding-bottom: 10px; } }
 
 @media all and (max-width: 320px) { .blog-date span { transition: .5s; text-align: left; display: block; padding-bottom: 10px; } }
 
@@ -1003,6 +1011,12 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .related-blog-content { -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; background-color: #fff; position: relative; overflow: hidden; padding: 30px; margin: 0 40px; bottom: 120px; border: 1px solid aliceblue; text-align: left; -webkit-box-shadow: 0 8px 7px -2px #eff0f0; box-shadow: 0 8px 7px -2px #eff0f0; }
 
+@media all and (max-width: 460px) { .related-blog-content { transition: .5s; margin: 0 15px; bottom: 80px; } }
+
+@media all and (max-width: 360px) { .related-blog-content { transition: .5s; margin: 0 15px; bottom: 80px; } }
+
+@media all and (max-width: 320px) { .related-blog-content { transition: .5s; margin: 0 15px; bottom: 80px; } }
+
 #comments { padding: 20px 0px; background-color: #fff; margin-bottom: 10px; }
 
 #comments li { list-style: none; }
@@ -1013,6 +1027,14 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 #comments .commentlist { margin: 0; padding: 0; list-style: none; }
 
+@media all and (max-width: 575px) { #comments .commentlist .children { transition: .5s; list-style: none; margin-left: 60px; } }
+
+@media all and (max-width: 460px) { #comments .commentlist .children { transition: .5s; list-style: none; margin-left: 60px; } }
+
+@media all and (max-width: 360px) { #comments .commentlist .children { transition: .5s; list-style: none; margin-left: 60px; } }
+
+@media all and (max-width: 320px) { #comments .commentlist .children { transition: .5s; list-style: none; margin-left: 10px; } }
+
 #comments .commentlist .children .children { margin-left: 30px; }
 
 #comments .commentlist .comment-author { float: left; width: 60px; overflow: hidden; border-radius: 50%; }
@@ -1021,7 +1043,23 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 #comments .commentlist .comment-body { margin-left: 85px; }
 
+@media all and (max-width: 575px) { #comments .commentlist .comment-body { transition: .5s; margin-left: 70px; } }
+
+@media all and (max-width: 460px) { #comments .commentlist .comment-body { transition: .5s; margin-left: 70px; } }
+
+@media all and (max-width: 360px) { #comments .commentlist .comment-body { transition: .5s; margin-left: 70px; } }
+
+@media all and (max-width: 320px) { #comments .commentlist .comment-body { transition: .5s; margin-left: 70px; } }
+
 #comments .commentlist .comment-body p { margin-top: 10px; font-size: 16px; }
+
+@media all and (max-width: 575px) { #comments .commentlist .comment-body p { transition: .5s; margin-top: 35px; font-size: 16px; } }
+
+@media all and (max-width: 460px) { #comments .commentlist .comment-body p { transition: .5s; margin-top: 35px; font-size: 16px; } }
+
+@media all and (max-width: 360px) { #comments .commentlist .comment-body p { transition: .5s; margin-top: 35px; font-size: 16px; } }
+
+@media all and (max-width: 320px) { #comments .commentlist .comment-body p { transition: .5s; margin-top: 35px; font-size: 16px; } }
 
 #comments .commentlist > .comment .comment-box { border-bottom: 2px solid #f7f9f9; }
 
@@ -1032,6 +1070,14 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 #comments .comment-box { position: relative; padding-top: 15px; padding-bottom: 15px; }
 
 #comments .comment-abs { position: absolute; display: inline-block; font-size: 0; top: 30px; right: 0; }
+
+@media all and (max-width: 575px) { #comments .comment-abs { transition: .5s; position: absolute; display: inline-block; font-size: 0; top: 60px; left: 65px; } }
+
+@media all and (max-width: 460px) { #comments .comment-abs { transition: .5s; position: absolute; display: inline-block; font-size: 0; top: 60px; left: 65px; } }
+
+@media all and (max-width: 360px) { #comments .comment-abs { transition: .5s; position: absolute; display: inline-block; font-size: 0; top: 60px; left: 65px; } }
+
+@media all and (max-width: 320px) { #comments .comment-abs { transition: .5s; position: absolute; display: inline-block; font-size: 0; top: 60px; left: 65px; } }
 
 #comments .comment-abs a { display: inline-block; margin: 4px; font-size: 10px; text-transform: uppercase; color: #848484; border: 1px solid #eee; padding: 5px 8px; letter-spacing: .03em; }
 

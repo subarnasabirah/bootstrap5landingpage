@@ -20,8 +20,24 @@
         padding: 0;
         list-style: none;
         .children{
+            @include media('mobile-md'){
+                list-style: none;
+                margin-left: 60px;
+              }
+              @include media('mobile-sm'){
+                list-style: none;
+                margin-left: 60px;
+              }
+              @include media('mobile-xsm') {
+                list-style: none;
+                margin-left: 60px;
+              }
+              @include media('mobile-xxsm') {
+                list-style: none;
+                margin-left: 10px;
+              }
             .children {
-                margin-left: 30px
+                margin-left: 30px;
             }
 
         }
@@ -38,9 +54,37 @@
         }
         .comment-body {
             margin-left: 85px;
+            @include media('mobile-md'){
+                margin-left: 70px;
+              }
+              @include media('mobile-sm'){
+                margin-left: 70px;
+              }
+              @include media('mobile-xsm') {
+                margin-left: 70px;
+              }
+              @include media('mobile-xxsm') {
+                margin-left: 70px;
+              }
             p{
                 margin-top: 10px;
                 font-size: 16px;
+                @include media('mobile-md'){
+                    margin-top: 35px;
+                    font-size: 16px;
+                  }
+                  @include media('mobile-sm'){
+                    margin-top: 35px;
+                    font-size: 16px;
+                  }
+                  @include media('mobile-xsm') {
+                    margin-top: 35px;
+                    font-size: 16px;
+                  }
+                  @include media('mobile-xxsm') {
+                    margin-top: 35px;
+                    font-size: 16px;
+                  }
             }
         }
     }
@@ -66,6 +110,34 @@
         font-size: 0;
         top: 30px;
         right: 0;
+        @include media('mobile-md'){
+            position: absolute;
+            display: inline-block;
+            font-size: 0;
+            top: 60px;
+            left: 65px;
+          }
+          @include media('mobile-sm'){
+            position: absolute;
+            display: inline-block;
+            font-size: 0;
+            top: 60px;
+            left: 65px;
+          }
+          @include media('mobile-xsm') {
+            position: absolute;
+            display: inline-block;
+            font-size: 0;
+            top: 60px;
+            left: 65px;
+          }
+          @include media('mobile-xxsm') {
+            position: absolute;
+            display: inline-block;
+            font-size: 0;
+            top: 60px;
+            left: 65px;
+          }
         a{
             display: inline-block;
             margin: 4px;
