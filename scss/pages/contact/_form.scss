@@ -1,0 +1,183 @@
+.contact-section {
+    padding: 90px 0;
+    background-image: url('../img/contact/contact-form-bg.png');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cotact-width{
+    width: 100%;
+
+}
+// .contact-form{
+//     .input {
+//         width: 100%;
+//         border: none;
+//         -webkit-box-shadow: 1px 1px 10px 0px rgba(90, 144, 227, 0.2);
+//         box-shadow: 1px 1px 10px 0px rgba(90, 144, 227, 0.2);
+//         padding-left: 18px;
+//     }
+//     .name-email {
+//         height: 45px;
+//     }
+//     .help-block{
+//         &.with-errors{
+//             position: absolute;
+//             top: 100%;
+//             left: 0;
+//         }
+//     }
+//     .form-group {
+//         margin-bottom: 35px;
+//     }
+//     .message {
+//         padding-top: 30px;
+//         resize: none;
+//     }
+// }
+    .modal-content {
+        margin-top: 30%;
+        padding-right: 0;
+    }
+    
+
+.form-c {
+    margin: 0;
+    background-color: $white-color;
+    border: 10px solid #eeeefe;
+    input[type="submit"] {
+        display: inline-block;
+    }
+    input[type="text"],
+    textarea {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.form-d{
+    margin-top: 20px;
+    padding: 30px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    @include transition (.5s);
+    margin-bottom: 80px;
+    &:hover{
+        -webkit-box-shadow: 0px 15px 15px 0px $light-color;
+        box-shadow: 0px 15px 15px 0px $light-color;
+        @include transform (translateY(-10px));
+
+    }
+    input[type="text"],
+    textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    border-bottom: 2px solid $frm-br-btm;
+    @include transition (.5s);
+      @include media('mobile-xsm') {
+        padding: 5px;
+        margin-bottom: 20px;
+       
+      }
+      @include media('mobile-xxsm') {
+        padding: 5px;
+        margin-bottom: 20px;
+      
+      }
+
+
+    &:focus{
+        border-bottom: 2px solid $focus-color;
+        padding: 12px 0 12px 15px;
+
+        @include media('mobile-xsm') {
+            padding: 5px 0 5px 7px;
+           
+          }
+          @include media('mobile-xxsm') {
+            padding: 5px 0 5px 7px;
+          
+          }
+
+    }
+  }
+
+  input[type="email"]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 35px;
+    resize: vertical;
+    background: transparent;
+    border-bottom: 2px solid $frm-br-btm;
+    @include transition (.5s);
+    
+    @include media('mobile-xsm') {
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    @include media('mobile-xxsm') {
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    &:focus{
+        border-bottom: 2px solid $focus-color;
+        padding: 12px 0 12px 15px;
+
+        @include media('mobile-xsm') {
+            padding: 5px 0 5px 7px;
+           
+          }
+          @include media('mobile-xxsm') {
+            padding: 5px 0 5px 7px;
+          
+          }
+
+    }
+}
+
+input[type=submit] {
+    background-color: $bg-color;
+    text-decoration: none;
+    color: $white-color;
+    text-transform: uppercase;
+    padding: 15px 0;
+    @include transition (.5s);
+    font-size: 14px;
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    -webkit-box-shadow: 0 5px 16px #bababa;
+    box-shadow: 0 5px 16px #bababa;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 20px;
+    @include media('mobile-xsm') {
+        margin-top: 8px;
+        padding: 12px 0;
+       
+      }
+      @include media('mobile-xxsm') {
+        margin-top: 8px;
+        padding: 12px 0;
+      
+      }
+
+    
+    &:hover{
+        border: 1px solid $bg-color;
+        color: $bg-color;
+        background-color: $white-color;
+        -webkit-box-shadow: 0 5px 16px transparent;
+        box-shadow: 0 5px 16px transparent;
+        cursor: pointer
+
+    }
+}
+
+}

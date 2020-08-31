@@ -1,0 +1,50 @@
+.contact-us-heading h2 {
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #686ab3;
+    margin-top: 10px;
+}
+.mg-bottom-0 {
+    margin-bottom: 0 !important;
+}
+.primary-contact{
+    .address{
+        margin: 20px 0 15px;
+    }
+    .website {
+        margin-bottom: 40px;
+    }
+}
+
+a.launch-map {
+    background-color: $white-color;
+    text-decoration: none;
+    color: $brand-color!important;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 0;
+   @include transition (.5s);
+    font-size: 14px;
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    -webkit-box-shadow: 0 5px 16px transparent;
+    box-shadow: 0 5px 16px transparent;
+    border: 1px solid $brand-color;
+    cursor: pointer;
+    &:hover{
+        color: $white-color!important;
+        background-color: $brand-color;
+    }
+    i {
+        margin-left: 15px;
+        color: $brand-color;
+        @include transition (.5s);
+    }
+    &:hover i{
+        color: $white-color!important;
+    }
+
+}

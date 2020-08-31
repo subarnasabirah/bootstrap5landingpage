@@ -1097,4 +1097,70 @@ header.scrolled { background: #6B6FFF !important; -webkit-transition: 0.75s ease
 
 .form-group { margin-bottom: 1rem; }
 
+.contact { height: 65vh; background-image: url("../img/about/about-page-bg.jpg"); }
+
+.contact-section { padding: 90px 0; background-image: url("../img/contact/contact-form-bg.png"); background-repeat: repeat; background-position: center; background-size: cover; }
+
+.cotact-width { width: 100%; }
+
+.modal-content { margin-top: 30%; padding-right: 0; }
+
+.form-c { margin: 0; background-color: #fff; border: 10px solid #eeeefe; }
+
+.form-c input[type="submit"] { display: inline-block; }
+
+.form-c input[type="text"], .form-c textarea { margin-top: 0; margin-bottom: 20px; }
+
+.form-d { margin-top: 20px; padding: 30px; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; margin-bottom: 80px; }
+
+.form-d:hover { -webkit-box-shadow: 0px 15px 15px 0px #edeaea; box-shadow: 0px 15px 15px 0px #edeaea; -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); transform: translateY(-10px); }
+
+.form-d input[type="text"], .form-d textarea { width: 100%; padding: 12px; border: none; resize: vertical; background: transparent; border-bottom: 2px solid #D4D4FF; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+@media all and (max-width: 360px) { .form-d input[type="text"], .form-d textarea { transition: .5s; padding: 5px; margin-bottom: 20px; } }
+
+@media all and (max-width: 320px) { .form-d input[type="text"], .form-d textarea { transition: .5s; padding: 5px; margin-bottom: 20px; } }
+
+.form-d input[type="text"]:focus, .form-d textarea:focus { border-bottom: 2px solid #7e7ef2; padding: 12px 0 12px 15px; }
+
+@media all and (max-width: 360px) { .form-d input[type="text"]:focus, .form-d textarea:focus { transition: .5s; padding: 5px 0 5px 7px; } }
+
+@media all and (max-width: 320px) { .form-d input[type="text"]:focus, .form-d textarea:focus { transition: .5s; padding: 5px 0 5px 7px; } }
+
+.form-d input[type="email"] { width: 100%; padding: 12px; border: none; margin-top: 6px; margin-bottom: 35px; resize: vertical; background: transparent; border-bottom: 2px solid #D4D4FF; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+@media all and (max-width: 360px) { .form-d input[type="email"] { transition: .5s; padding: 5px; margin-bottom: 20px; } }
+
+@media all and (max-width: 320px) { .form-d input[type="email"] { transition: .5s; padding: 5px; margin-bottom: 20px; } }
+
+.form-d input[type="email"]:focus { border-bottom: 2px solid #7e7ef2; padding: 12px 0 12px 15px; }
+
+@media all and (max-width: 360px) { .form-d input[type="email"]:focus { transition: .5s; padding: 5px 0 5px 7px; } }
+
+@media all and (max-width: 320px) { .form-d input[type="email"]:focus { transition: .5s; padding: 5px 0 5px 7px; } }
+
+.form-d input[type=submit] { background-color: #6B6FFF; text-decoration: none; color: #fff; text-transform: uppercase; padding: 15px 0; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; font-size: 14px; font-weight: 700; width: 150px; text-align: center; -webkit-box-shadow: 0 5px 16px #bababa; box-shadow: 0 5px 16px #bababa; border: 1px solid transparent; margin: auto; margin-top: 20px; }
+
+@media all and (max-width: 360px) { .form-d input[type=submit] { transition: .5s; margin-top: 8px; padding: 12px 0; } }
+
+@media all and (max-width: 320px) { .form-d input[type=submit] { transition: .5s; margin-top: 8px; padding: 12px 0; } }
+
+.form-d input[type=submit]:hover { border: 1px solid #6B6FFF; color: #6B6FFF; background-color: #fff; -webkit-box-shadow: 0 5px 16px transparent; box-shadow: 0 5px 16px transparent; cursor: pointer; }
+
+.contact-us-heading h2 { font-weight: 900; font-size: 25px; letter-spacing: 1px; text-transform: uppercase; color: #686ab3; margin-top: 10px; }
+
+.mg-bottom-0 { margin-bottom: 0 !important; }
+
+.primary-contact .address { margin: 20px 0 15px; }
+
+.primary-contact .website { margin-bottom: 40px; }
+
+a.launch-map { background-color: #fff; text-decoration: none; color: #6B6FFF !important; text-transform: uppercase; display: inline-block; padding: 15px 0; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; font-size: 14px; font-weight: 700; width: 150px; text-align: center; -webkit-box-shadow: 0 5px 16px transparent; box-shadow: 0 5px 16px transparent; border: 1px solid #6B6FFF; cursor: pointer; }
+
+a.launch-map:hover { color: #fff !important; background-color: #6B6FFF; }
+
+a.launch-map i { margin-left: 15px; color: #6B6FFF; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+
+a.launch-map:hover i { color: #fff !important; }
+
 /*# sourceMappingURL=main.css.map */
