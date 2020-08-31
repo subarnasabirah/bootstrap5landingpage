@@ -1,0 +1,51 @@
+ul{
+    &.countdown{
+        li{
+            display: inline-block;
+            width: 80px;
+            height: 75px;
+            background-color: $brand-color;
+            margin-right: 15px;
+            line-height: 75px;
+            text-align: center;
+            color: $white-color;
+            font-size: 40px;
+            font-family: sans-serif;
+            @include media('mobile-md') {
+                width: 65px;
+                height: 60px;
+                margin-right: 5px;
+                line-height: 60px;
+                font-size: 35px;
+              }
+            @include media('mobile-sm') {
+                width: 65px;
+                height: 60px;
+                margin-right: 5px;
+                line-height: 60px;
+                font-size: 35px;
+              }
+            @include media('mobile-xsm') {
+                font-size: 20px;
+              }
+              @include media('mobile-xxsm') {
+                width: 65px;
+                height: 60px;
+                margin-right: 5px;
+                line-height: 60px;
+                font-size: 35px;
+              }
+            &:first-child{
+                margin-left: 0;
+            }
+            p{
+                color: $white-color;
+                font-size: 15px;
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+        }
+
+
+    }
+}

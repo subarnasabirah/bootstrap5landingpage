@@ -1,0 +1,39 @@
+.coming-share {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    a{
+        color: $white-color;
+        margin-left: 10px;
+        font-size: 25px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        text-transform: uppercase;
+        @include media('mobile-md') {
+            font-size: 20px;
+          }
+        @include media('mobile-sm') {
+            font-size: 20px;
+          }
+        @include media('mobile-xsm') {
+            font-size: 20px;
+          }
+          @include media('mobile-xxsm') {
+            font-size: 20px;
+          }
+        &:first-child{
+            margin-left: 0;
+        }
+        span {
+            font-size: 19px;
+            display: block;
+            margin-top: 20px;
+    
+        }
+
+    }
+    
+}

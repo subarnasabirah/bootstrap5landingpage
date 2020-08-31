@@ -1,0 +1,61 @@
+.coming-soon-area {
+    background-image: url('../img/coming-soon/coming-soon.jpg');
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/coming-soon/pattern.png');
+    }
+}
+.coming-soon-text{
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    @include transform ( translateY(-50%));
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        color: #e0e0e0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 31px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        @include media('mobile-md') {
+            font-size: 25px;
+          }
+        @include media('mobile-sm') {
+            font-size: 25px;
+          }
+        @include media('mobile-xsm') {
+            font-size: 25px;
+          }
+          @include media('mobile-xxsm') {
+            font-size: 25px;
+          }
+    }
+    a{
+        img{
+            width: 250px;
+            @include media('mobile-md') {
+                width: 200px;
+              }
+            @include media('mobile-sm') {
+                width: 200px;
+              }
+            @include media('mobile-xsm') {
+                width: 200px;
+              }
+              @include media('mobile-xxsm') {
+                width: 200px;
+              }
+        }
+    }
+}
