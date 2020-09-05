@@ -860,5 +860,39 @@
 <script src="plugins/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="plugins/scrollup/jquery.scrollUp.js"></script>
 <script src="js/main.js"></script>
+<script>
+
+    //counter
+
+    $(window).on("load scroll",function(){
+        startCounting();
+    });
+
+    function startCounting() {
+        if (isElementVisible($('.counter')) && !countingFinish) {
+            countingFinish = true;
+            $('.counter').each(function (e) {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        }
+    }
+
+    function isElementVisible($elementToBeChecked) {
+        const TopView = $(window).scrollTop();
+        const BotView = TopView + $(window).height();
+        const TopElement = $elementToBeChecked.offset().top;
+        const BotElement = TopElement + $elementToBeChecked.height();
+        return ((BotElement <= BotView) && (TopElement >= TopView));
+    }
+
+</script>
 </body>
 </html>
