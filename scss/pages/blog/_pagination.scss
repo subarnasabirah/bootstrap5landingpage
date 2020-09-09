@@ -4,7 +4,7 @@
 .pagination {
     display: inline-block;
     a{
-        color: black;
+        color: $brand-color;
         float: left;
         padding: 8px 16px;
         text-decoration: none;
@@ -13,14 +13,14 @@
         margin: 0 4px;
         border: 1px solid transparent;
         &.active{
-            background-color: $brand-color;
+            background-color: $crimson-color;
             color: $white-color;
-            border: 1px solid $brand-color;
+            border: 1px solid $crimson-color;
 
         }
     }
     a:hover:not(.active) {
-        color: $brand-color;
-        border: 1px solid $brand-color;
+        color: $crimson-color;
+        border: 1px solid $crimson-color;
     }
 }

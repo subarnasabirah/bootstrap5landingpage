@@ -8,17 +8,16 @@
     display: inline-block;
     margin: auto;
     h2{
-        font-weight: 900;
-        font-size: 33px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: $blu-color;
+        @extend %sectionTitleTwo;
+        span{
+            color: $crimson-color;
+          }
     }
     h4{
         position: relative;
         display: inline-block;
         text-transform: uppercase;
-        color: $title-color;
+        color: $brand-color;
         font-size: 18px;
         margin-bottom: 80px;
     }
@@ -27,7 +26,7 @@
         content: " ";
         width: 80px;
         height: 3px;
-        background-color: $blu-color;
+        background-color: $crimson-color;
         left: 49%;
         @include transition(.5s);
         bottom: -10px; 
@@ -45,7 +44,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        background-color: rgba(107, 111, 255, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         position: absolute;
         top: -100%;
         left: 0;
@@ -76,7 +75,7 @@
                 line-height: 35px;
                 background: $white-color;
                 font-size: 20px;
-                color: $bg-color;
+                color: $crimson-color;
                 margin: 0 2px;
                 text-decoration: none;
             }
@@ -141,14 +140,14 @@
 
     }
     &:hover .title{
-        color: $white-color!important
+        color: $crimson-color!important
 
     }
     .post {
         display: block;
         font-size: 13px;
         font-weight: 400;
-        color: #686ab3;
+        color: $crimson-color;
         margin-top: 3px;
         text-align: right;
         font-weight: 700

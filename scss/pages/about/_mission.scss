@@ -2,24 +2,63 @@
     padding: 90px 0;
 }
 
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+      span{
+        color: $crimson-color;
+        
+    }
+      @include media('mobile-md') {
+        font-size: 28px;
+       
+      }
+      
+  
+    }
+  }
+.section-button{
+  a{
+    @extend %btnTwoCss;
+  }
+  a:hover {
+    background-color:  $crimson-color;
+    color: $white-color;
+    border: 1px solid transparent;
+  }
+}
+
 .mission-content {
     padding-top: 0;
     ul{
-        //margin-left: 20px;
+        
         li{
-            list-style: none;
-            list-style-image: url('../img/mission/list.png');
-            line-height: 28px
+            list-style-type: disc;
+            line-height: 28px;
+            color: $crimson-color;
+            p{
+              color: $brand-color;
+            }
         }
+        
     }
 }
 
-.mission-list {
-    //padding-left: 15px;
-    list-style: disc;
-}
+
 .about-mission{
     img{
         width: 100%;
+        @include transition(.5s);
+    }
+    img:hover {
+      width: 100%;
+      @include transform (scale(1.02));
+  
+  
     }
 }

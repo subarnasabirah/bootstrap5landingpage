@@ -3,55 +3,44 @@
     background-color: $contnt-bg-color;
 
 .services-content{
-    text-align: left;
+    text-align: center;
 }
 
 .section-title {
+  margin-bottom: 60px;
     h4 {
-      @extend %sectionTitleOne;
-      font-weight: 500;
-    }
-  
-    h2 {
       @extend %sectionTitleTwo;
-      @include media('mobile-xsm') {
-        font-size: 28px;
+      position: relative;
+      span{
+        color: $crimson-color;
       }
-      @include media('mobile-xxsm') {
-        font-size: 28px;
+      &::before{
+            position: absolute;
+            content: "";
+            width: 115px;
+            height: 3px;
+            margin-bottom: 40px;
+            background-color: $crimson-color;
+            left: 50%;
+            @include transition(.5s);
+            bottom: -30px;
+            @include transform (translateX(-50%));
       }
-  
     }
+  
+    
 }
   
-  
-  p {
-    @extend %paraCss;
-  }
-
-
-  .section-button {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  
-    a {
-      @extend %btnTwoCss;
-    }
-  
-    a:hover {
-      background-color: $white-color;
-      color: $bg-color;
-      border: 1px solid $bg-color;
-    }
-  }
-
-
 
 .single-services{
-    -webkit-box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
-    box-shadow: 0 0 15px rgba(218, 219, 255, 0.4);
-    text-align: center;
-    padding: 50px 0 0 0;
+    width: 100%;
+    background-image: url(../img/services/img-1.png);
+    background-size: cover;
+    margin: 10px 5%;
+	  border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     @include transition (.5s);
     background-color: $white-color;
     margin-bottom: 25px;
@@ -62,16 +51,44 @@
         box-shadow: 0px 15px 15px 0px $light-color;
    
     }
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(60deg, #000000 0%, rgba(0,0,0,.8) 100%);
+      opacity: .9;
+      z-index: -1;
+    }
+    .service-item{
+      text-align: center;
+      padding: 30px;
+      .icon{
+        img{
+          height: 80px;
+          width: 80px;
+          margin-bottom: 30px;
+        }
+        
+      }
+      h2{
+        font-size: 20px;
+	      color: $white-color;
+	      margin-bottom: 15px;
+        text-transform: uppercase;
+        span{
+          color: $crimson-color;
+        }
+      }
+      p{
+        color: $white-color;
+        font-size: 13px;
+        line-height: 25px;
+      }
+    }
+    
 }
 
-.single-services img {
-    margin-bottom: 30px;
-}
-
-.single-services h4 {
-    @extend %sectionTitleOne;
-    padding-bottom: 50px;
-    color: #555454;
-    font-weight: 700;
-}
 }

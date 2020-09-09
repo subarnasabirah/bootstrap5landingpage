@@ -4,15 +4,15 @@
 
 
 .blog-heading{
-    text-align-last: center;
+    text-align: center;
     display: inline-block;
     margin: auto;
     h2{
-        font-weight: 900;
-        font-size: 33px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        @extend %sectionTitleTwo;
         color: $white-color;
+        span{
+            color: $crimson-color;
+          }
     }
     h4{
         position: relative;
@@ -27,7 +27,7 @@
         content: "";
         width: 80px;
         height: 3px;
-        background-color: $white-color;
+        background-color: $crimson-color;
         left: 50%;
         bottom: -10px;
         @include transition (.5s);
@@ -72,7 +72,7 @@
     top: 15px;
     right: 0;
     span{
-        background-color: $bg-color;
+        background-color: $crimson-color;
         padding: 7px 18px;
         color: $white-color;
         text-transform: capitalize;
@@ -145,7 +145,7 @@
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
-    color: $bg-color;
+    color: $crimson-color;
     position: relative;
     margin-top: 10px;
     &::before{
@@ -153,7 +153,7 @@
         content: "";
         width: 0;
         height: 2px;
-        background-color: $bg-color;
+        background-color: $crimson-color;
         left: 0;
         @include transition (.5s);
         bottom: -5px;

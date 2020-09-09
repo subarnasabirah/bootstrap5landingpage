@@ -31,31 +31,21 @@
         @include media('mobile-md') {
             font-size: 25px;
           }
-        @include media('mobile-sm') {
-            font-size: 25px;
-          }
-        @include media('mobile-xsm') {
-            font-size: 25px;
-          }
-          @include media('mobile-xxsm') {
-            font-size: 25px;
-          }
+        
     }
     a{
-        img{
-            width: 250px;
-            @include media('mobile-md') {
-                width: 200px;
-              }
-            @include media('mobile-sm') {
-                width: 200px;
-              }
-            @include media('mobile-xsm') {
-                width: 200px;
-              }
-              @include media('mobile-xxsm') {
-                width: 200px;
-              }
+      h3{
+        color: $white-color;
+        text-decoration: none;
+        margin-left: 10px;
+        letter-spacing: 4px;
+        font-size-adjust: 25px;
+        span{
+          color: $crimson-color;
         }
+        
+      }
+    
+  
     }
 }

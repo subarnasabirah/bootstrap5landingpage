@@ -29,22 +29,7 @@
       @include media('mobile-tab') {
         font-size: 30px;
       }
-      @include media('mobile-lg') {
-        font-size: 30px;
-      }
-      @include media('mobile-md') {
-        font-size: 30px;
-      }
-      @include media('mobile-sm') {
-        font-size: 30px;
-      }
-      @include media('mobile-xsm') {
-        font-size: 30px;
-        
-      }
-      @include media('mobile-xxsm') {
-        font-size: 30px;
-      }
+      
     }
     h3{
       font-size: 18px;
@@ -56,12 +41,7 @@
       @include media('tab') {
         font-size: 20px;
       }
-      @include media('mobile-xsm') {
-        font-size: 20px; 
-      }
-      @include media('mobile-xxsm') {
-        font-size: 20px;
-      }
+      
   
     }
   }
@@ -75,51 +55,25 @@
     margin-top: 30px;
     
   }
-  @include media('mobile-lg'){
-    margin-top: 30px;
-    
-  }
-  @include media('mobile-md'){
-    margin-top: 30px;
-    
-  }
-  @include media('mobile-sm'){
-    margin-top: 30px;
-    
-  }
-  @include media('mobile-xsm') {
-    margin-top: 30px;
-    
-  }
-  @include media('mobile-xxsm') {
-    margin-top: 30px;
-    
-  }
+  
 }
 .section-title {
     h4 {
       @extend %sectionTitleOne;
-      font-weight: 500;
+      
     }
   
     h2 {
       @extend %sectionTitleTwo;
+      span{
+        color: $crimson-color;
+        
+    }
       @include media('mobile-md') {
         font-size: 28px;
        
       }
-      @include media('mobile-sm') {
-        font-size: 28px;
-        
-      }
-      @include media('mobile-xsm') {
-        font-size: 28px;
-       
-      }
-      @include media('mobile-xxsm') {
-        font-size: 28px;
-        
-      }
+      
   
     }
   }
@@ -161,7 +115,8 @@
         @include transition(all 200ms);
     }
     &:hover::after{
-        background-color: #9352f0a6;
+        background-color: $brand-color;
+       
     }
     img{
         position: relative;

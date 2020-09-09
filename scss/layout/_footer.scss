@@ -8,25 +8,7 @@
       -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 12%, 100% 100%, 100% 100%, 0 100%);
   }
-  @include media('mobile-md'){
-    -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 12%, 100% 100%, 100% 100%, 0 100%);
-  }
-  @include media('mobile-sm'){
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 10%, 100% 100%, 100% 100%, 0 100%);
-  }
-  @include media('mobile-xsm') {
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 10%, 100% 100%, 100% 100%, 0 100%);
-   
-  }
-  @include media('mobile-xxsm') {
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 10%, 100% 100%, 100% 100%, 0 100%);
-  }
-
-
+  
 
   &::before {
     content: '';
@@ -35,7 +17,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(53, 56, 153, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
 
   }
 
@@ -82,20 +64,25 @@
 
     .border-right {
       border-right: 2px solid $white-color;
-      // @include media('mobile-lg') {
-      //   border-right: 2px solid transparent!important;
-      // }
-      // @include media('mobile-xxs') {
-      //   border-right: 2px solid transparent!important;
-      // }
+      
       
     }
     
   }
 
 
-  .company-logo img {
-    width: 180px;
+  .company-logo {
+    h3{
+      color: $white-color;
+      text-decoration: none;
+      margin-left: 10px;
+      letter-spacing: 4px;
+      font-size-adjust: 25px;
+      span{
+        color: $crimson-color;
+      }
+      
+    }
   }
 
   .about-company {
@@ -118,14 +105,10 @@
           @include media('tab') {
             margin-bottom: 10px;
           }
-          @include media('mobile-lg'){
-            margin-bottom: 10px;
-          }
-
           a {
             display: inline-block;
             background-color: $white-color;
-            color: #2e307d;
+            color: $crimson-color;
             height: 30px;
             width: 30px;
             line-height: 30px;
@@ -134,7 +117,7 @@
             @include transition (.5s);
 
             &:hover {
-              color: $bg-color;
+              color: rgba(0, 0, 0, 0.9);
 
             }
           }
@@ -203,8 +186,8 @@
 
     .subscribe {
       border: none;
-      background-color: $bg-color;
-      color: #fff;
+      background-color: $crimson-color;
+      color: $white-color;
       padding: 10px 10px;
       cursor: pointer;
       @include transition (.5s);
@@ -233,8 +216,9 @@
       }
       
       &:hover {
-        background-color: $white-color;
-        color: $bg-color;
+        background-color: $brand-color;
+        color: $crimson-color;
+        
 
       }
 
@@ -246,7 +230,7 @@
   .footer-bottom {
     position: relative;
     z-index: 99;
-    background-color: #2e307d;
+    background-color: rgba(0, 0, 0, 0.9);
     height: 80px;
 
     p {
@@ -266,37 +250,9 @@
 
   .copyright a {
     text-decoration: none;
+    color: $crimson-color;
   }
 }
 
-.footer-icon {
-  text-align: right;
-  position: absolute;
-  right: 0;
-  top: -80px;
 
-  @include media('tab') {
-    top: -45px;
-  }
-  @include media('mobile-lg') {
-    top: -75px;
-  }
-  @include media('mobile-md') {
-    top: -80px;
-  }
- 
-  @include media('mobile-sm') {
-    top: -90px;
-  }
-  @include media('mobile-sm') {
-    top: -80px;
-  }
-  @include media('mobile-xsm') {
-    top: -85px;
-  }
-  @include media('mobile-xxsm') {
-    top: -88px;
-  }
- 
-}
 

@@ -1,6 +1,6 @@
 .about-us-area {
   padding: 90px 0;
-
+  
 
 .about-img {
   -webkit-box-shadow: 0 0 15px $boxshadow-color;
@@ -21,53 +21,49 @@
 
 
   }
-
-  &:after,
-  &:before {
+  &::before{
     content: '';
     position: absolute;
-    left: -31px;
-    top: -30px;
-    width: 90%;
-    height: 92%;
+    left: -30px;
+    top: 40px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid $crimson-color;
     z-index: -1;
-    background-color: rgba($color: $brand-color, $alpha: 0.12);
-    @include transition(.5s);
   }
+  
 
-  &:after {
-    right: -31px;
-    bottom: -30px;
-    left: auto;
-    top: auto;
-  }
+  // &:after,
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   left: -31px;
+  //   top: -30px;
+  //   width: 90%;
+  //   height: 92%;
+  //   z-index: -1;
+  //   background-color: rgba($color: rgb(101, 188, 123), $alpha: 0.12);
+  //   @include transition(.5s);
+  // }
+
+  
+
 
 }
 
 .about-content {
-  text-align: right;
+  text-align: left;
   padding-top: 60px;
 }
 
 .section-title {
   h4 {
-    @extend %sectionTitleOne;
-    font-weight: 500;
-  }
-
-  h2 {
     @extend %sectionTitleTwo;
-    
-    @include media('mobile-xsm') {
-      font-size: 28px;
-     
+    span{
+      color: $crimson-color;
     }
-    @include media('mobile-xxsm') {
-      font-size: 28px;
-      
-    }
-
   }
+
 }
 
 p {
@@ -82,9 +78,9 @@ p {
   }
 
   a:hover {
-    background-color: $white-color;
-    color: $bg-color;
-    border: 1px solid $bg-color;
+    background-color:  $crimson-color;
+    color: $white-color;
+    border: 1px solid transparent;
   }
 }
 

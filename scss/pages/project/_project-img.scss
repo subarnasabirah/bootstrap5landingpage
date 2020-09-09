@@ -1,3 +1,25 @@
+.section-title {
+  h4 {
+    @extend %sectionTitleOne;
+    
+  }
+
+  h2 {
+    @extend %sectionTitleTwo;
+    span{
+      color: $crimson-color;
+      
+  }
+    @include media('mobile-md') {
+      font-size: 28px;
+     
+    }
+    
+
+  }
+}
+
+
 .single-project-image {
     overflow: hidden;
     img{
@@ -6,25 +28,6 @@
         @include media('tab') {
             width: 100%;
             
-          }
-          @include media('mobile-lg'){
-            width: 100%;
-            
-          }
-          @include media('mobile-md'){
-            width: 100%;
-            
-          }
-          @include media('mobile-sm'){
-            width: 100%;
-            
-          }
-          @include media('mobile-xsm') {
-            width: 100%;
-            
-          }
-          @include media('mobile-xxsm') {
-            width: 100%;
           }
     }
     &:hover img{
@@ -44,25 +47,7 @@
             width: 100%;
             
           }
-          @include media('mobile-lg'){
-            width: 100%;
-            
-          }
-          @include media('mobile-md'){
-            width: 100%;
-            
-          }
-          @include media('mobile-sm'){
-            width: 100%;
-            
-          }
-          @include media('mobile-xsm') {
-            width: 100%;
-            
-          }
-          @include media('mobile-xxsm') {
-            width: 100%;
-          }
+        
     }
 }
 .margin-top-project{
@@ -71,15 +56,7 @@
         margin-top: 30px;
         
       }
-      @include media('mobile-sm'){
-        margin-top: 30px;
-      }
-      @include media('mobile-xsm') {
-        margin-top: 30px;
-      }
-      @include media('mobile-xxsm') {
-        margin-top: 30px;
-      }
+     
 
 &:hover img{
     @include transform (scale(1.1));
@@ -98,25 +75,7 @@ img{
         width: 100%;
         
       }
-      @include media('mobile-lg'){
-        width: 100%;
-        
-      }
-      @include media('mobile-md'){
-        width: 100%;
-        
-      }
-      @include media('mobile-sm'){
-        width: 100%;
-        
-      }
-      @include media('mobile-xsm') {
-        width: 100%;
-        
-      }
-      @include media('mobile-xxsm') {
-        width: 100%;
-      }
+      
 }
 
 }
@@ -136,6 +95,9 @@ img{
         font-weight: 600;
         margin-bottom: 6px;
         font-size: 25px;
+        span{
+          color: $crimson-color;
+        }
     }
     .project-info{
         background-color: #f4f6f8;
@@ -191,7 +153,7 @@ img{
 
     }
     &:hover .client-img img{
-        border: 3px solid $bg-color;
+        border: 3px solid $crimson-color;
 
     }
 

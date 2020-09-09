@@ -7,18 +7,13 @@
     display: inline-block;
     margin: auto;
     h2{
-        font-weight: 900;
-        font-size: 35px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: $blu-color;
+        @extend %sectionTitleTwo;
+        span{
+            color: $crimson-color;
+          }
         @include media('mobile-xsm') {
             font-size: 28px;
            
-          }
-          @include media('mobile-xxsm') {
-            font-size: 28px;
-            
           }
 
 
@@ -27,7 +22,7 @@
         position: relative;
         display: inline-block;
         text-transform: uppercase;
-        color: $title-color;
+        color: $brand-color;
         font-size: 18px;
         margin-bottom: 80px
 
@@ -37,7 +32,7 @@
             content: "";
             width: 80px;
             height: 3px;
-            background-color: $blu-color;
+            background-color: $crimson-color;
             left: 50%;
             @include transition(.5s);
             bottom: -10px;
@@ -66,7 +61,7 @@
         width: 3px;
         height: 0;
         bottom: 0;
-        background: $blu-color;
+        background: $crimson-color;
         @include transition(.7s);
 
     }
@@ -83,7 +78,7 @@
         bottom: -100%;
         width: 3px;
         height: 0;
-        background: $blu-color;
+        background: $crimson-color;
         @include transition(.7s);
 
     }
@@ -93,9 +88,10 @@
 
     }
 
-    img{
+    i{
+        font-size: 50px;
+        color: $crimson-color;
         margin-bottom: 30px;
-
     }
     h4{
         color: $title-color;

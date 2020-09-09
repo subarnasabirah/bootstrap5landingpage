@@ -1,7 +1,27 @@
 .our-partner {
     padding: 90px 0;
 }
-
+.section-title {
+    h4 {
+      @extend %sectionTitleOne;
+      
+    }
+  
+    h2 {
+      @extend %sectionTitleTwo;
+      span{
+        color: $crimson-color;
+        
+    }
+      @include media('mobile-md') {
+        font-size: 28px;
+       
+      }
+      
+  
+    }
+  }
+  
 
 .brand-item{
     padding: 20px;
@@ -9,29 +29,7 @@
     img{
         max-width: 100%;
         height: auto;
-        // @include media('tab') {
-        //     max-width: 100%;
-        //   }
-        //   @include media('mobile-lg'){
-        //     max-width: 100%;
-            
-        //   }
-        //   @include media('mobile-md'){
-        //     max-width: 100%;
-            
-        //   }
-        //   @include media('mobile-sm'){
-        //     max-width: 100%;
-            
-        //   }
-        //   @include media('mobile-xsm') {
-        //     max-width: 100%;
-            
-        //   }
-        //   @include media('mobile-xxsm') {
-        //     max-width: 100%;
-            
-        //   }
+        
         
     }
 }

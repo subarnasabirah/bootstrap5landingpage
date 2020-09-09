@@ -3,14 +3,15 @@
     text-transform: uppercase;
     margin: 0 0 10px;
     line-height: 1.2;
+    color: $brand-color;
   
   }
   %sectionTitleTwo{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 32px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $title-color;
+    color: $brand-color;
     padding-bottom: 20px;
     line-height: 1.2;
   }
@@ -18,7 +19,7 @@
     margin: 0 0 15px;
     font-size: 17px;
     line-height: 31px;
-    color: $title-color;
+    color: $brand-color;
   }
  %vdoPlyBtn{
   content: "";
@@ -29,7 +30,7 @@
   display: block;
   width: 80px;
   height: 80px;
-  background: $brand-color;
+  background: $crimson-color;
   border-radius: 50%;
   @include transform (translateX(-50%) translateY(-50%));
  }

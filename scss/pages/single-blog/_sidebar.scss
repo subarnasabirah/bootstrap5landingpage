@@ -66,11 +66,15 @@
 }
 
 .input-group-text {
-    background-color: $brand-color;
+    background-color: $crimson-color;
     color: $white-color;
     cursor: pointer;
     padding: 10px 12px;
     border-radius: 0;
+    &:hover{
+        background-color: $brand-color;
+        color: $white-color;
+    }
     
 }
 
@@ -199,12 +203,5 @@
         margin: 0 15px;
         bottom: 80px;
       }
-      @include media('mobile-xsm') {
-        margin: 0 15px;
-        bottom: 80px;
-      }
-      @include media('mobile-xxsm') {
-        margin: 0 15px;
-        bottom: 80px;
-      }
+      
 }

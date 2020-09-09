@@ -1,16 +1,3 @@
-// .navbar-brand {
-//   background-color: $mid-grey;
-//   img {
-
-//     max-width: 100px;
-//     width: 100%;
-//     color: $brand-color;
-//   }
-//   &.active{
-
-//   }
-// }
-
 
 /*preloader*/
 
@@ -33,37 +20,18 @@
   width: 100px;
 }
 
-/*navbar-brand*/
-.navbar-brand {
-  width: 200px;
-  height: 55px;
-  display: inline-block;
-  @include media('tab') {
-   width: 180px;
-   margin-left: -40px;
-  }
-  @include media('mobile-lg') {
-    width: 160px;
-    margin-left: -40px;
-  }
-  @include media('mobile-md') {
-    width: 160px;
-    margin-left: -40px;
-  }
-  @include media('mobile-sm') {
-    width: 160px;
-    margin-left: -40px;
-  }
-  @include media('mobile-xsm') {
-    width: 160px;
-    margin-left: -40px;
-  }
-  @include media('mobile-xxsm') {
-    width: 160px;
-    margin-left: -40px;
-    
-  }
-  
+.navbar-brand{
+    h3{
+      color: $white-color;
+      text-decoration: none;
+      margin-left: 10px;
+      letter-spacing: 4px;
+      font-size-adjust: 25px;
+      span{
+        color: $crimson-color;
+      }
+      
+    }
   
 }
 
@@ -107,7 +75,7 @@
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px;
-      background: rgba(107,111,255,0.7);
+      background: rgba(0,0,0,0.7);
       border-top: 1px solid #ffffff80;
       &.scrolled{
         background: $brand-color!important;
@@ -144,7 +112,7 @@
       bottom: 50%;
       width: 0%;
       height: 4%;
-      background: $white-color;
+      background: $crimson-color;
       @include transition (all 0.3s linear);
     }
 
@@ -193,7 +161,7 @@
     }
 
     .dropdown li:hover a {
-      color: #CCC5D0 !important;
+      color: $crimson-color !important;
       @include transition (0.75s ease);
 
     }
@@ -247,7 +215,7 @@ header{
   z-index: 11;
 }
 header.scrolled{
-  background: $bg-color!important;
+  background: rgba(23, 26, 33,1)!important;
   @include transition (0.75s ease);
 
 }
@@ -258,7 +226,7 @@ header.scrolled{
    position: relative;
     width: 100%;
     height: 100vh;
-    background: url('../img/header.jpg');
+    background: url('../img/header.png');
     background-size: cover;
     background-position: 50% 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 85%);
@@ -289,7 +257,7 @@ header.scrolled{
       top: 0;
       width: 100%;
       height: 100vh;
-      background-image: linear-gradient(to bottom, rgba(53, 56, 152, 0.9), rgba(40, 42, 85, 0.8), rgba(21, 27, 51, 0.8));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 
     }
 
@@ -351,11 +319,11 @@ header.scrolled{
   a{
     @extend %btnCss;
     padding: 14px 25px;
-    @include transition(0.5s);
   }
   a:hover{
-    background-color: $white-color;
-    color: $bg-color;
+    background-color: $crimson-color;
+    color: $white-color;
+    border: 0;
   }
 }
 

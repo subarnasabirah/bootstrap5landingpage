@@ -6,11 +6,10 @@
     text-align: center;
     
     h2{
-        font-weight: 900;
-        font-size: 33px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: $title-color;
+        @extend  %sectionTitleTwo;
+        span{
+            color: $crimson-color;
+        }
     }
     p{
         padding-bottom: 15px;
@@ -21,7 +20,8 @@
     position: relative;
     overflow: hidden;
     &:hover .expertise-text{
-        background-color: rgba(107, 111, 255, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
+        
 
     }
 }
@@ -30,7 +30,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(107, 111, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
     text-align: center;
@@ -51,7 +51,7 @@
             content: "";
             width: 0%;
             height: 3px;
-            background-color: $white-color;
+            background-color: $crimson-color;
             left: 50%;
             @include transition(.5s);
             @include transform (translateX(-50%));

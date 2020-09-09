@@ -17,41 +17,24 @@
                 padding: 10px 10px;
                 
               }
-              @include media('mobile-lg'){
-                padding: 10px 10px;
-                
-              }
+              
               @include media('mobile-md'){
                 padding: 5px 5px;
                 font-size: 13px;
                 
-              }
-              @include media('mobile-sm'){
-                padding: 5px 5px;
-                font-size: 13px;
-                
-              }
-              @include media('mobile-xsm') {
-                padding: 5px 5px;
-                font-size: 13px;
-                
-              }
-              @include media('mobile-xxsm') {
-                padding: 5px 5px;
-                font-size: 13px;
               }
 
 
         
         }
         a:hover{
-            color: $brand-color;
-            border: 1px solid $brand-color;
+            color: $crimson-color;
+            border: 1px solid $crimson-color;
         }
         &.active a{
             padding: 10px 20px;
             color: $white-color;
-            background: $brand-color;
+            background: $crimson-color;
             @include transition (.5s);
         }
     }

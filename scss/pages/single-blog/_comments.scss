@@ -24,14 +24,6 @@
                 list-style: none;
                 margin-left: 60px;
               }
-              @include media('mobile-sm'){
-                list-style: none;
-                margin-left: 60px;
-              }
-              @include media('mobile-xsm') {
-                list-style: none;
-                margin-left: 60px;
-              }
               @include media('mobile-xxsm') {
                 list-style: none;
                 margin-left: 10px;
@@ -57,31 +49,11 @@
             @include media('mobile-md'){
                 margin-left: 70px;
               }
-              @include media('mobile-sm'){
-                margin-left: 70px;
-              }
-              @include media('mobile-xsm') {
-                margin-left: 70px;
-              }
-              @include media('mobile-xxsm') {
-                margin-left: 70px;
-              }
+              
             p{
                 margin-top: 10px;
                 font-size: 16px;
                 @include media('mobile-md'){
-                    margin-top: 35px;
-                    font-size: 16px;
-                  }
-                  @include media('mobile-sm'){
-                    margin-top: 35px;
-                    font-size: 16px;
-                  }
-                  @include media('mobile-xsm') {
-                    margin-top: 35px;
-                    font-size: 16px;
-                  }
-                  @include media('mobile-xxsm') {
                     margin-top: 35px;
                     font-size: 16px;
                   }
@@ -117,27 +89,6 @@
             top: 60px;
             left: 65px;
           }
-          @include media('mobile-sm'){
-            position: absolute;
-            display: inline-block;
-            font-size: 0;
-            top: 60px;
-            left: 65px;
-          }
-          @include media('mobile-xsm') {
-            position: absolute;
-            display: inline-block;
-            font-size: 0;
-            top: 60px;
-            left: 65px;
-          }
-          @include media('mobile-xxsm') {
-            position: absolute;
-            display: inline-block;
-            font-size: 0;
-            top: 60px;
-            left: 65px;
-          }
         a{
             display: inline-block;
             margin: 4px;
@@ -148,8 +99,8 @@
             padding: 5px 8px;
             letter-spacing: .03em;
             &:hover{
-                border-color: $brand-color;
-                background-color: $brand-color;
+                border-color: $crimson-color;
+                background-color: $crimson-color;
                 color: $white-color;
             }
         }
@@ -187,12 +138,18 @@
     }
 }
 #post-comment {
-    background-color: #6B6FFF;
+    background-color: $crimson-color;
     color: #fff;
     border-radius: 0;
     &:focus {
         -webkit-box-shadow: 0 0 0 .2rem transparent;
         box-shadow: 0 0 0 .2rem transparent;
+    }
+    &:hover{
+      background-color: $white-color;
+      color: $crimson-color;
+      border: 1px solid $crimson-color;
+
     }
 }
 
