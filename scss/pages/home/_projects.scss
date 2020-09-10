@@ -29,69 +29,80 @@
      
 }
 
-.project-item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 90%;
-  margin: 20px auto;
+.pa-margintop {
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.single-project{
+  position: relative;
   overflow: hidden;
-  border-radius: 5px;
-  background-image: linear-gradient(60deg, #000000 0%, $brand-color 100%); 
-  .project-info{
-    padding: 30px;
-    color: $white-color;
-    h1{
-      
-      span{
-        color: $crimson-color;
-      }
-    }
-    h2{
-      font-size: 20px;
-      margin-top: 15px;
-      
-    }
-    p{
-      margin-top: 10px;
-      font-size: 14px;
+  img{
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-style: none;
+      @include transition (1s);
+  }
+  &:hover img{
+      @include transform (scale(1.1));
+  }
+  &:hover .portfolio-text{
+      background-color: rgba(0, 0, 0, 0.5);
+
+  }
+  &:hover .portfolio-text a{
+      margin-left: 0
+
+  }
+  &:hover .portfolio-text h5{
+      margin-left: 0;
+
+  }
+
+}
+
+.portfolio-text{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 44%;
+  @include transition (.5s);
+
+  h5{
       color: $white-color;
-      
-    }
+      margin: 0;
+      font-size: 25px;
+      margin-left: -780px;
+      text-transform: capitalize;
+      font-weight: 700;
+      @include transition (.7s);
+
   }
-  
+  a{
+      background-color: $white-color;
+      text-decoration: none;
+      color: $crimson-color;
+      text-transform: capitalize;
+      display: inline-block;
+      padding: 10px 30px;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: -785px;
+      @include transition (.7s);
+  }
+  a:hover{
+      background-color: $crimson-color;
+      color: $white-color;
 
-
+  }
 }
-.project-image{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    @include transition (1s);
-    &::after{
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-image:linear-gradient(60deg, #000000 0%, $brand-color 100%); 
-      opacity: .7;
-      
-  }
-  &:hover{
-    @include transform (scale(1.1));
-  }
-  
-  
-
-  
-
-}
-
-
 
 
 
